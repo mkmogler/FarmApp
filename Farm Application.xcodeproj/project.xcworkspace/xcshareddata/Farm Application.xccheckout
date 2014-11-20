@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C6C542C5-6B69-4655-A3F9-8684E5BAACF7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Farm Application</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9265DE80-CF98-4631-A16B-3A084E5FB357</key>
+		<string>https://github.com/mkmogler/FarmApp/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Farm Application.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9265DE80-CF98-4631-A16B-3A084E5FB357</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>9265DE80-CF98-4631-A16B-3A084E5FB357</key>
+		<string>https://github.com/mkmogler/FarmApp</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mkmogler/FarmApp/trunk/Farm%20Application.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9265DE80-CF98-4631-A16B-3A084E5FB357</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9265DE80-CF98-4631-A16B-3A084E5FB357</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FarmApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
