@@ -14,7 +14,7 @@
 		<string>https://github.com/mkmogler/FarmApp/trunk</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Farm Application.xcodeproj/project.xcworkspace</string>
+	<string>trunk/Farm Application.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9265DE80-CF98-4631-A16B-3A084E5FB357</key>
