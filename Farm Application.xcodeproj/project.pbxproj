@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		14AE49221A1D9C910057597A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49211A1D9C910057597A /* main.m */; };
 		14AE49251A1D9C910057597A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49241A1D9C910057597A /* AppDelegate.m */; };
-		14AE49281A1D9C910057597A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49271A1D9C910057597A /* ViewController.m */; };
 		14AE492B1A1D9C910057597A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE49291A1D9C910057597A /* Main.storyboard */; };
 		14AE492D1A1D9C910057597A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492C1A1D9C910057597A /* Images.xcassets */; };
 		14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492E1A1D9C910057597A /* LaunchScreen.xib */; };
 		14AE493C1A1D9C910057597A /* Farm_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */; };
+		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
+		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		14AE49211A1D9C910057597A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14AE49231A1D9C910057597A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AE49241A1D9C910057597A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14AE49261A1D9C910057597A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		14AE49271A1D9C910057597A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		14AE492A1A1D9C910057597A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14AE492C1A1D9C910057597A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14AE492F1A1D9C910057597A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		14AE49351A1D9C910057597A /* Farm ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farm ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE493A1A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Farm_ApplicationTests.m; sourceTree = "<group>"; };
+		61B44C521A229DD500E31DED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
+		61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSelectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +84,9 @@
 		14AE491E1A1D9C910057597A /* Farm Application */ = {
 			isa = PBXGroup;
 			children = (
+				61B44C501A229D3300E31DED /* Storyboard 1 */,
 				14AE49231A1D9C910057597A /* AppDelegate.h */,
 				14AE49241A1D9C910057597A /* AppDelegate.m */,
-				14AE49261A1D9C910057597A /* ViewController.h */,
-				14AE49271A1D9C910057597A /* ViewController.m */,
-				14AE49291A1D9C910057597A /* Main.storyboard */,
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
@@ -117,6 +118,26 @@
 				14AE493A1A1D9C910057597A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61B44C501A229D3300E31DED /* Storyboard 1 */ = {
+			isa = PBXGroup;
+			children = (
+				61B44C511A229D8D00E31DED /* Views */,
+				14AE49291A1D9C910057597A /* Main.storyboard */,
+			);
+			name = "Storyboard 1";
+			sourceTree = "<group>";
+		};
+		61B44C511A229D8D00E31DED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */,
+				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
+				61B44C521A229DD500E31DED /* LoginViewController.h */,
+				61B44C531A229DD500E31DED /* LoginViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14AE49281A1D9C910057597A /* ViewController.m in Sources */,
 				14AE49251A1D9C910057597A /* AppDelegate.m in Sources */,
 				14AE49221A1D9C910057597A /* main.m in Sources */,
+				61B44C541A229DD500E31DED /* LoginViewController.m in Sources */,
+				61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +434,7 @@
 				14AE49411A1D9C910057597A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14AE49421A1D9C910057597A /* Build configuration list for PBXNativeTarget "Farm ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				14AE49441A1D9C910057597A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
