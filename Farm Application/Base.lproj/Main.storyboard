@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="56" y="246"/>
         </scene>
-        <!--View Controller-->
+        <!--Death Info View Controller-->
         <scene sceneID="iQH-l0-Tvy">
             <objects>
-                <viewController id="Gun-fl-jgl" sceneMemberID="viewController">
+                <viewController id="Gun-fl-jgl" customClass="DeathInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iUO-LO-T0Z"/>
                         <viewControllerLayoutGuide type="bottom" id="F3b-Yd-jg6"/>
