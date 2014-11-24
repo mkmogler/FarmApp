@@ -19,6 +19,7 @@
 		61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B021A23CCB500D3106E /* InventoryViewController.m */; };
 		61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B051A23CCC200D3106E /* MedicationViewController.m */; };
 		61444B091A23CD7300D3106E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B081A23CD7300D3106E /* NotesViewController.m */; };
+		61444B0C1A23D47100D3106E /* DeathInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B0B1A23D47100D3106E /* DeathInfoViewController.m */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		61444B051A23CCC200D3106E /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationViewController.m; sourceTree = "<group>"; };
 		61444B071A23CD7300D3106E /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		61444B081A23CD7300D3106E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		61444B0A1A23D47100D3106E /* DeathInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathInfoViewController.h; sourceTree = "<group>"; };
+		61444B0B1A23D47100D3106E /* DeathInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathInfoViewController.m; sourceTree = "<group>"; };
 		61B44C521A229DD500E31DED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
 				61B44C521A229DD500E31DED /* LoginViewController.h */,
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
+				61444B0A1A23D47100D3106E /* DeathInfoViewController.h */,
+				61444B0B1A23D47100D3106E /* DeathInfoViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61444B091A23CD7300D3106E /* NotesViewController.m in Sources */,
+				61444B0C1A23D47100D3106E /* DeathInfoViewController.m in Sources */,
 				14AE49251A1D9C910057597A /* AppDelegate.m in Sources */,
 				61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */,
 				14AE49221A1D9C910057597A /* main.m in Sources */,
