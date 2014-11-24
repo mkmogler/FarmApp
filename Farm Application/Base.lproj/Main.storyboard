@@ -32,7 +32,131 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="182"/>
+            <point key="canvasLocation" x="291" y="-337"/>
+        </scene>
+        <!--Room Stats View Controller-->
+        <scene sceneID="lO7-mG-vBe">
+            <objects>
+                <viewController id="VcF-W8-9Cy" customClass="RoomStatsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tB0-3K-gNn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gKL-uZ-Avb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TLQ-WE-yeK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJo-ct-R0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="246"/>
+        </scene>
+        <!--Mortality View Controller-->
+        <scene sceneID="oTr-uu-dwL">
+            <objects>
+                <viewController id="usM-2r-nv5" customClass="MortalityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WA5-dZ-f6D"/>
+                        <viewControllerLayoutGuide type="bottom" id="z0w-4z-RWA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UrT-nx-mEo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcO-SJ-WiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="866"/>
+        </scene>
+        <!--Notes View Controller-->
+        <scene sceneID="Dvg-Lb-Lru">
+            <objects>
+                <viewController id="yCs-lY-cid" customClass="NotesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TGZ-uk-eSD"/>
+                        <viewControllerLayoutGuide type="bottom" id="zXx-TW-BRh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgE-rQ-faO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkt-Um-Mwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="866"/>
+        </scene>
+        <!--Medication View Controller-->
+        <scene sceneID="pT8-yR-8Hw">
+            <objects>
+                <viewController id="RGM-iL-msw" customClass="MedicationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XCO-BE-Gn5"/>
+                        <viewControllerLayoutGuide type="bottom" id="2aS-pq-5mF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2EV-AS-Cyh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgA-cT-Hlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="866"/>
+        </scene>
+        <!--Entry Screen View Controller-->
+        <scene sceneID="ibE-oB-aVK">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="aWa-Ww-7gJ" customClass="EntryScreenViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="ARQ-pH-meH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dYq-E5-H2X">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="x0u-Kf-YJR">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="aWa-Ww-7gJ" id="ejw-dJ-Osa"/>
+                            <outlet property="delegate" destination="aWa-Ww-7gJ" id="DYF-dT-jEE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oel-aC-GWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="246"/>
+        </scene>
+        <!--Inventory View Controller-->
+        <scene sceneID="Ic5-6L-akT">
+            <objects>
+                <viewController id="Rys-oa-TaK" customClass="InventoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oNT-NY-A4e"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRA-GN-uuX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAR-hQ-ruZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkz-HR-HzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="246"/>
         </scene>
         <!--Group Selection View Controller-->
         <scene sceneID="m6J-Ju-bKj">
@@ -52,6 +176,10 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="toStoryboard2:" destination="uWv-U5-dvf" eventType="touchUpInside" id="CGq-Ia-A7e"/>
+                                    <segue destination="aWa-Ww-7gJ" kind="modal" id="Tr0-Ys-LUp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -59,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOs-a7-SDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="182"/>
+            <point key="canvasLocation" x="781" y="-337"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

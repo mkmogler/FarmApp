@@ -13,7 +13,6 @@
 		14AE492D1A1D9C910057597A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492C1A1D9C910057597A /* Images.xcassets */; };
 		14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492E1A1D9C910057597A /* LaunchScreen.xib */; };
 		14AE493C1A1D9C910057597A /* Farm_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */; };
-		6118D8121A22A87E00135696 /* entry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6118D8111A22A87E00135696 /* entry.storyboard */; };
 		61444AFA1A23CC7100D3106E /* EntryScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AF91A23CC7100D3106E /* EntryScreenViewController.m */; };
 		61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */; };
 		61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFF1A23CC9900D3106E /* MortalityViewController.m */; };
@@ -46,7 +45,6 @@
 		14AE49351A1D9C910057597A /* Farm ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farm ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE493A1A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Farm_ApplicationTests.m; sourceTree = "<group>"; };
-		6118D8111A22A87E00135696 /* entry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = entry.storyboard; sourceTree = "<group>"; };
 		61444AF81A23CC7100D3106E /* EntryScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryScreenViewController.h; sourceTree = "<group>"; };
 		61444AF91A23CC7100D3106E /* EntryScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryScreenViewController.m; sourceTree = "<group>"; };
 		61444AFB1A23CC8800D3106E /* RoomStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomStatsViewController.h; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				61B44C501A229D3300E31DED /* Storyboard 1 */,
-				6118D8071A22A6FC00135696 /* Storyboard 2 */,
 				14AE49231A1D9C910057597A /* AppDelegate.h */,
 				14AE49241A1D9C910057597A /* AppDelegate.m */,
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
@@ -141,16 +138,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6118D8071A22A6FC00135696 /* Storyboard 2 */ = {
+		61B44C501A229D3300E31DED /* Storyboard 1 */ = {
 			isa = PBXGroup;
 			children = (
-				6118D8101A22A7EA00135696 /* Views */,
-				6118D8111A22A87E00135696 /* entry.storyboard */,
+				61B44C511A229D8D00E31DED /* Views */,
+				14AE49291A1D9C910057597A /* Main.storyboard */,
 			);
-			name = "Storyboard 2";
+			name = "Storyboard 1";
 			sourceTree = "<group>";
 		};
-		6118D8101A22A7EA00135696 /* Views */ = {
+		61B44C511A229D8D00E31DED /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				61444AF81A23CC7100D3106E /* EntryScreenViewController.h */,
@@ -165,22 +162,6 @@
 				61444B051A23CCC200D3106E /* MedicationViewController.m */,
 				61444B071A23CD7300D3106E /* NotesViewController.h */,
 				61444B081A23CD7300D3106E /* NotesViewController.m */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		61B44C501A229D3300E31DED /* Storyboard 1 */ = {
-			isa = PBXGroup;
-			children = (
-				61B44C511A229D8D00E31DED /* Views */,
-				14AE49291A1D9C910057597A /* Main.storyboard */,
-			);
-			name = "Storyboard 1";
-			sourceTree = "<group>";
-		};
-		61B44C511A229D8D00E31DED /* Views */ = {
-			isa = PBXGroup;
-			children = (
 				61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */,
 				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
 				61B44C521A229DD500E31DED /* LoginViewController.h */,
@@ -271,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AE492B1A1D9C910057597A /* Main.storyboard in Resources */,
-				6118D8121A22A87E00135696 /* entry.storyboard in Resources */,
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 			);

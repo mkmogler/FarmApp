@@ -46,4 +46,7 @@
 }
 */
 
+- (IBAction)toStoryboard2:(id)sender {
+    
+}
 @end
