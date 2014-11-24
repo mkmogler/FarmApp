@@ -1,18 +1,18 @@
 //
-//  GroupSelectionViewController.m
+//  CreateGroupViewController.m
 //  Farm Application
 //
-//  Created by Nelson, Trevor J on 2014-11-23.
+//  Created by Nelson, Trevor J on 2014-11-24.
 //  Copyright (c) 2014 Kent Mogler. All rights reserved.
 //
 
-#import "GroupSelectionViewController.h"
+#import "CreateGroupViewController.h"
 
-@interface GroupSelectionViewController ()
+@interface CreateGroupViewController ()
 
 @end
 
-@implementation GroupSelectionViewController
+@implementation CreateGroupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

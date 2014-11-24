@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GroupSelectionViewController : UIViewController
-- (IBAction)toStoryboard2:(id)sender;
 
 @end

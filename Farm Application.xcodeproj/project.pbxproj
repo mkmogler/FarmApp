@@ -20,6 +20,7 @@
 		61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B051A23CCC200D3106E /* MedicationViewController.m */; };
 		61444B091A23CD7300D3106E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B081A23CD7300D3106E /* NotesViewController.m */; };
 		61444B0C1A23D47100D3106E /* DeathInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B0B1A23D47100D3106E /* DeathInfoViewController.m */; };
+		61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B111A23DDA800D3106E /* CreateGroupViewController.m */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		61444B081A23CD7300D3106E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		61444B0A1A23D47100D3106E /* DeathInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathInfoViewController.h; sourceTree = "<group>"; };
 		61444B0B1A23D47100D3106E /* DeathInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathInfoViewController.m; sourceTree = "<group>"; };
+		61444B101A23DDA800D3106E /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
+		61444B111A23DDA800D3106E /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
 		61B44C521A229DD500E31DED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
 				61444B0A1A23D47100D3106E /* DeathInfoViewController.h */,
 				61444B0B1A23D47100D3106E /* DeathInfoViewController.m */,
+				61444B101A23DDA800D3106E /* CreateGroupViewController.h */,
+				61444B111A23DDA800D3106E /* CreateGroupViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				61444AFA1A23CC7100D3106E /* EntryScreenViewController.m in Sources */,
 				61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */,
 				61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */,
+				61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */,
 				61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
