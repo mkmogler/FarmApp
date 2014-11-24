@@ -1,5 +1,5 @@
 //
-//  EntryScreenViewController.h
+//  MortalityViewController.h
 //  Farm Application
 //
 //  Created by Nelson, Trevor J on 2014-11-24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EntryScreenViewController : UICollectionViewController
+@interface MortalityViewController : UIViewController
 
 @end
