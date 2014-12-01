@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Kent Mogler. All rights reserved.
 /*
 **To Do
- **fix error with cell creation
  **set up segues
 */
 
@@ -56,14 +55,12 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return TransitionImages.count;
 }
-/*
-**broken.. looking for error
-- (UICollectionViewCell *)collecitonView:(UICollectionView *)collectionView cellForItemAtIndexPath(NSIndexPath *) indexPath{
+
+- (UICollectionViewCell *)collecitonView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *) indexPath{
     static NSString *identifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     UIImageView *transitionImageView = (UIImageView *)[cell viewWithTag:1];
     transitionImageView.image = [UIImage imageNamed:[TransitionImages objectAtIndex:indexPath.row]];
     return cell;
 }
-*/
 @end
