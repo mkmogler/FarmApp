@@ -164,12 +164,12 @@
 		614EAE761A2C02C700785381 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				614EAE791A2C054200785381 /* PInventory.jpg */,
+				614EAE7E1A2C054200785381 /* PSubmit.jpg */,
 				614EAE7A1A2C054200785381 /* PMedications.png */,
 				614EAE7B1A2C054200785381 /* PMortality.jpg */,
-				614EAE7C1A2C054200785381 /* PNotes.jpg */,
 				614EAE7D1A2C054200785381 /* PRoomStats.jpg */,
-				614EAE7E1A2C054200785381 /* PSubmit.jpg */,
+				614EAE7C1A2C054200785381 /* PNotes.jpg */,
+				614EAE791A2C054200785381 /* PInventory.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";

@@ -379,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgA-cT-Hlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="866"/>
+            <point key="canvasLocation" x="994" y="874"/>
         </scene>
         <!--Entry Screen View Controller-->
         <scene sceneID="ibE-oB-aVK">
@@ -617,7 +617,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="wLg-6n-YRh"/>
         <segue reference="bM2-Bf-MVc"/>
-        <segue reference="fly-lL-ECA"/>
     </inferredMetricsTieBreakers>
 </document>
