@@ -402,16 +402,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="130" height="133"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtI-kV-TQS">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtI-kV-TQS">
                                             <rect key="frame" x="0.0" y="0.0" width="130" height="133"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="RGM-iL-msw" kind="modal" identifier="ToMedication" id="pKK-3d-bb7"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -419,6 +416,14 @@
                             <outlet property="delegate" destination="aWa-Ww-7gJ" id="DYF-dT-jEE"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="VcF-W8-9Cy" kind="modal" identifier="ToRoomStats" id="30S-BC-ghx"/>
+                        <segue destination="Rys-oa-TaK" kind="modal" identifier="ToInventory" id="cBm-z8-ftl"/>
+                        <segue destination="usM-2r-nv5" kind="modal" identifier="ToMortality" id="NqV-28-w7O"/>
+                        <segue destination="RGM-iL-msw" kind="modal" identifier="ToMedication" id="ZSv-NU-ZtV"/>
+                        <segue destination="yCs-lY-cid" kind="modal" identifier="ToNotes" id="GJB-bp-P1r"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="Submit" id="Ukt-7T-buB"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oel-aC-GWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -612,7 +617,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="wLg-6n-YRh"/>
         <segue reference="bM2-Bf-MVc"/>
+        <segue reference="fly-lL-ECA"/>
     </inferredMetricsTieBreakers>
 </document>

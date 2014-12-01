@@ -4,13 +4,17 @@
 //
 //  Created by Nelson, Trevor J on 2014-11-24.
 //  Copyright (c) 2014 Kent Mogler. All rights reserved.
-//
+/*
+**To Do
+ **fix error with cell creation
+ **set up segues
+*/
 
 #import "EntryScreenViewController.h"
 
 @interface EntryScreenViewController (){
-    NSArray *transitionImages; //holds the images for each collection view cell
-    NSArray *locationNames;    //holds the names of each modal segue
+    NSArray *TransitionImages; //holds the images for each collection view cell
+    NSArray *LocationNames;    //holds the names of each modal segue
 }
 
 @end
@@ -29,7 +33,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //define arrays from plist
+    //create dictionary for cell information
+    NSString *CCIPath = [[NSBundle mainBundle] pathForResource:@"CollectionCellInformation" ofType:@"plist"]; //define path
+    NSDictionary *CellInformation = [[NSDictionary alloc] initWithContentsOfFile:CCIPath];//pull from path
+    //set in arrays
+    TransitionImages = [CellInformation objectForKey:@"Image"];
+    LocationNames = [CellInformation objectForKey:@"SendLoc"];
     
 }
 
@@ -44,4 +53,17 @@
     // set up a segue for each identifier/cell
 }
 
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return TransitionImages.count;
+}
+/*
+**broken.. looking for error
+- (UICollectionViewCell *)collecitonView:(UICollectionView *)collectionView cellForItemAtIndexPath(NSIndexPath *) indexPath{
+    static NSString *identifier = @"Cell";
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    UIImageView *transitionImageView = (UIImageView *)[cell viewWithTag:1];
+    transitionImageView.image = [UIImage imageNamed:[TransitionImages objectAtIndex:indexPath.row]];
+    return cell;
+}
+*/
 @end
