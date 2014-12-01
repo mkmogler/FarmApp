@@ -4,10 +4,6 @@
 //
 //  Created by Nelson, Trevor J on 2014-11-24.
 //  Copyright (c) 2014 Kent Mogler. All rights reserved.
-/*
-**To Do
- **set up segues
-*/
 
 #import "EntryScreenViewController.h"
 
@@ -49,7 +45,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // set up a segue for each identifier/cell
+    //set up for each segue as needed
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -62,5 +58,10 @@
     UIImageView *transitionImageView = (UIImageView *)[cell viewWithTag:1];
     transitionImageView.image = [UIImage imageNamed:[TransitionImages objectAtIndex:indexPath.row]];
     return cell;
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *segueID = [NSString stringWithString:[TransitionImages objectAtIndex:indexPath.row]];
+    [self performSegueWithIdentifier:segueID sender:nil];
 }
 @end
