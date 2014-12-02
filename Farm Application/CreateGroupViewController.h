@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateGroupViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIPickerView *barnPicker;
 
 @end

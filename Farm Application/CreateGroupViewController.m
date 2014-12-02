@@ -9,7 +9,9 @@
 #import "CreateGroupViewController.h"
 
 @interface CreateGroupViewController ()
-
+{
+    NSArray *_barnPickerData;
+}
 @end
 
 @implementation CreateGroupViewController
@@ -26,7 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Initialize Data
+    _barnPickerData = @[@"Pig Hill Sow", @"Lactation", @"Pig Hill Boar", @"S&S", @"Alons", @"R. Warner Nursery", @"Larry VR Nursery", @"Gilt Developer", @"PHC-West Finisher 1", @"PHC-West Finisher 2", @"PHC-West Finisher 3", @"PHC-West Finisher 4W", @"PHC-West Finisher 4E", @"PHC-Perry Barn 1W", @"PHC-Perry Barn 1E", @"PHC-Perry Barn 2N", @"PHC-Perry Barn 2S", @"Evan Altena", @"Dave Griese Barn 1", @"Dave Griesse Barn 2", @"Ron Kyper", @"Brian Monen", @"Loren VR-South", @"Loren VR-North", @"C. Van Roekel-West", @"C. Van Roekel-East", @"AFP", @"E&L", @"Mill Pond", @"FBR", @"R. Warner #1 West", @"R. Warner #2 Curtain", @"R. Warner #3 Tunnel", @"Marv Flier", @"Berg", @"Larry VR Finisher"];
 }
 
 - (void)didReceiveMemoryWarning
