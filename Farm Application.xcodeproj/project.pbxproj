@@ -13,6 +13,7 @@
 		14AE492D1A1D9C910057597A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492C1A1D9C910057597A /* Images.xcassets */; };
 		14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492E1A1D9C910057597A /* LaunchScreen.xib */; };
 		14AE493C1A1D9C910057597A /* Farm_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */; };
+		61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61115E781A311AB0001567DE /* Default-568h@2x.png */; };
 		61444AFA1A23CC7100D3106E /* EntryScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AF91A23CC7100D3106E /* EntryScreenViewController.m */; };
 		61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */; };
 		61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFF1A23CC9900D3106E /* MortalityViewController.m */; };
@@ -54,6 +55,7 @@
 		14AE49351A1D9C910057597A /* Farm ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farm ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE493A1A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Farm_ApplicationTests.m; sourceTree = "<group>"; };
+		61115E781A311AB0001567DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		61444AF81A23CC7100D3106E /* EntryScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryScreenViewController.h; sourceTree = "<group>"; };
 		61444AF91A23CC7100D3106E /* EntryScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryScreenViewController.m; sourceTree = "<group>"; };
 		61444AFB1A23CC8800D3106E /* RoomStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomStatsViewController.h; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		14AE49131A1D9C910057597A = {
 			isa = PBXGroup;
 			children = (
+				61115E781A311AB0001567DE /* Default-568h@2x.png */,
 				14AE491E1A1D9C910057597A /* Farm Application */,
 				14AE49381A1D9C910057597A /* Farm ApplicationTests */,
 				14AE491D1A1D9C910057597A /* Products */,
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AE492B1A1D9C910057597A /* Main.storyboard in Resources */,
+				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				614EAE831A2C054200785381 /* PRoomStats.jpg in Resources */,
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
