@@ -31,6 +31,12 @@
 		614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE861A2C05E900785381 /* CollectionCellInformation.plist */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
+		7BE7D3141A363F4D00C06DAC /* PSubmit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3131A363F4D00C06DAC /* PSubmit.jpg */; };
+		7BE7D31A1A363F6800C06DAC /* PInventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3151A363F6800C06DAC /* PInventory.jpg */; };
+		7BE7D31B1A363F6800C06DAC /* PMedications.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3161A363F6800C06DAC /* PMedications.png */; };
+		7BE7D31C1A363F6800C06DAC /* PMortality.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3171A363F6800C06DAC /* PMortality.jpg */; };
+		7BE7D31D1A363F6800C06DAC /* PNotes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3181A363F6800C06DAC /* PNotes.jpg */; };
+		7BE7D31E1A363F6800C06DAC /* PRoomStats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE7D3191A363F6800C06DAC /* PRoomStats.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +88,12 @@
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
 		61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSelectionViewController.m; sourceTree = "<group>"; };
+		7BE7D3131A363F4D00C06DAC /* PSubmit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PSubmit.jpg; sourceTree = "<group>"; };
+		7BE7D3151A363F6800C06DAC /* PInventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PInventory.jpg; sourceTree = "<group>"; };
+		7BE7D3161A363F6800C06DAC /* PMedications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PMedications.png; sourceTree = "<group>"; };
+		7BE7D3171A363F6800C06DAC /* PMortality.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PMortality.jpg; sourceTree = "<group>"; };
+		7BE7D3181A363F6800C06DAC /* PNotes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PNotes.jpg; sourceTree = "<group>"; };
+		7BE7D3191A363F6800C06DAC /* PRoomStats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PRoomStats.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,12 @@
 		14AE491F1A1D9C910057597A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BE7D3151A363F6800C06DAC /* PInventory.jpg */,
+				7BE7D3161A363F6800C06DAC /* PMedications.png */,
+				7BE7D3171A363F6800C06DAC /* PMortality.jpg */,
+				7BE7D3181A363F6800C06DAC /* PNotes.jpg */,
+				7BE7D3191A363F6800C06DAC /* PRoomStats.jpg */,
+				7BE7D3131A363F4D00C06DAC /* PSubmit.jpg */,
 				14AE49201A1D9C910057597A /* Info.plist */,
 				14AE49211A1D9C910057597A /* main.m */,
 				614EAE861A2C05E900785381 /* CollectionCellInformation.plist */,
@@ -285,16 +303,22 @@
 			files = (
 				14AE492B1A1D9C910057597A /* Main.storyboard in Resources */,
 				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
+				7BE7D31C1A363F6800C06DAC /* PMortality.jpg in Resources */,
+				7BE7D31E1A363F6800C06DAC /* PRoomStats.jpg in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				614EAE831A2C054200785381 /* PRoomStats.jpg in Resources */,
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
 				614EAE811A2C054200785381 /* PMortality.jpg in Resources */,
 				614EAE841A2C054200785381 /* PSubmit.jpg in Resources */,
+				7BE7D31D1A363F6800C06DAC /* PNotes.jpg in Resources */,
+				7BE7D3141A363F4D00C06DAC /* PSubmit.jpg in Resources */,
+				7BE7D31B1A363F6800C06DAC /* PMedications.png in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 				614EAE7F1A2C054200785381 /* PInventory.jpg in Resources */,
 				614EAE821A2C054200785381 /* PNotes.jpg in Resources */,
 				614EAE801A2C054200785381 /* PMedications.png in Resources */,
+				7BE7D31A1A363F6800C06DAC /* PInventory.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
