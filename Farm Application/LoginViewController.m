@@ -9,7 +9,9 @@
 #import "LoginViewController.h"
 
 @interface LoginViewController ()
-
+{
+    NSArray *_namePickerData;
+}
 @end
 
 @implementation LoginViewController
@@ -26,13 +28,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Initialize Data
+    _namePickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
+    
+    // connect data
+    self.namePicker.dataSource = self;
+    self.namePicker.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// The number of colums of data
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _namePickerData.count;
+}
+
+//The data to return for the row and component (colum) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _namePickerData[row];
 }
 
 /*
