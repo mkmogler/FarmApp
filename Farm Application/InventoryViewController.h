@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InventoryViewController : UIViewController
+@interface InventoryViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@property (strong, nonatomic) IBOutlet UIPickerView *SourcePicker;
 
 @end

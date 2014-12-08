@@ -463,6 +463,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="SourcePicker" destination="Pd7-Iy-cl5" id="rcD-42-Egp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkz-HR-HzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

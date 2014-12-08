@@ -9,6 +9,9 @@
 #import "InventoryViewController.h"
 
 @interface InventoryViewController ()
+{
+    NSArray *_SourcePickerData;
+}
 
 @end
 
@@ -26,7 +29,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Initialize Data
+    _SourcePickerData = @[@"Pig Hill(P)", @"Coyote Ridge(C)", @"Jackrabbit Farms(J)", @"Windy Plains(W)", @"Open Market(O)"];
+    
+    // Connect Data
+    self.SourcePicker.dataSource = self;
+    self.SourcePicker.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +43,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+// The number of colums of data
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return 1;
 }
-*/
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _SourcePickerData.count;
+}
+
+//The data to return for the row and component (colum) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _SourcePickerData[row];
+}
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
