@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */; };
 		14AE49221A1D9C910057597A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49211A1D9C910057597A /* main.m */; };
 		14AE49251A1D9C910057597A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49241A1D9C910057597A /* AppDelegate.m */; };
 		14AE492B1A1D9C910057597A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE49291A1D9C910057597A /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B021A23CCB500D3106E /* InventoryViewController.m */; };
 		61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B051A23CCC200D3106E /* MedicationViewController.m */; };
 		61444B091A23CD7300D3106E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B081A23CD7300D3106E /* NotesViewController.m */; };
-		61444B0C1A23D47100D3106E /* DeathInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B0B1A23D47100D3106E /* DeathInfoViewController.m */; };
 		61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B111A23DDA800D3106E /* CreateGroupViewController.m */; };
 		614EAE7F1A2C054200785381 /* PInventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE791A2C054200785381 /* PInventory.jpg */; };
 		614EAE801A2C054200785381 /* PMedications.png in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7A1A2C054200785381 /* PMedications.png */; };
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Final Data Review Plist.plist"; sourceTree = "<group>"; };
 		14AE491C1A1D9C910057597A /* Farm Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE49201A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE49211A1D9C910057597A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,8 +69,6 @@
 		61444B051A23CCC200D3106E /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationViewController.m; sourceTree = "<group>"; };
 		61444B071A23CD7300D3106E /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		61444B081A23CD7300D3106E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
-		61444B0A1A23D47100D3106E /* DeathInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeathInfoViewController.h; sourceTree = "<group>"; };
-		61444B0B1A23D47100D3106E /* DeathInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeathInfoViewController.m; sourceTree = "<group>"; };
 		61444B101A23DDA800D3106E /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
 		61444B111A23DDA800D3106E /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
 		614EAE791A2C054200785381 /* PInventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PInventory.jpg; path = ../../images/PInventory.jpg; sourceTree = "<group>"; };
@@ -133,6 +132,7 @@
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
+				0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */,
 			);
 			path = "Farm Application";
 			sourceTree = "<group>";
@@ -196,8 +196,6 @@
 				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
 				61B44C521A229DD500E31DED /* LoginViewController.h */,
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
-				61444B0A1A23D47100D3106E /* DeathInfoViewController.h */,
-				61444B0B1A23D47100D3106E /* DeathInfoViewController.m */,
 				61444B101A23DDA800D3106E /* CreateGroupViewController.h */,
 				61444B111A23DDA800D3106E /* CreateGroupViewController.m */,
 			);
@@ -290,6 +288,7 @@
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				614EAE831A2C054200785381 /* PRoomStats.jpg in Resources */,
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
+				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
 				614EAE811A2C054200785381 /* PMortality.jpg in Resources */,
 				614EAE841A2C054200785381 /* PSubmit.jpg in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
@@ -314,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				61444B091A23CD7300D3106E /* NotesViewController.m in Sources */,
-				61444B0C1A23D47100D3106E /* DeathInfoViewController.m in Sources */,
 				14AE49251A1D9C910057597A /* AppDelegate.m in Sources */,
 				61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */,
 				14AE49221A1D9C910057597A /* main.m in Sources */,
