@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B74B0C61A3644B100C79CED /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B74B0C51A3644B100C79CED /* libsqlite3.dylib */; };
+		0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B74B0C71A3644F600C79CED /* localhost.sqlite */; };
 		0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */; };
 		14AE49221A1D9C910057597A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49211A1D9C910057597A /* main.m */; };
 		14AE49251A1D9C910057597A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49241A1D9C910057597A /* AppDelegate.m */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B74B0C51A3644B100C79CED /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		0B74B0C71A3644F600C79CED /* localhost.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = localhost.sqlite; sourceTree = "<group>"; };
 		0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Final Data Review Plist.plist"; sourceTree = "<group>"; };
 		14AE491C1A1D9C910057597A /* Farm Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AE49201A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B74B0C61A3644B100C79CED /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 		14AE49131A1D9C910057597A = {
 			isa = PBXGroup;
 			children = (
+				0B74B0C51A3644B100C79CED /* libsqlite3.dylib */,
 				61115E781A311AB0001567DE /* Default-568h@2x.png */,
 				14AE491E1A1D9C910057597A /* Farm Application */,
 				14AE49381A1D9C910057597A /* Farm ApplicationTests */,
@@ -140,6 +146,7 @@
 		14AE491F1A1D9C910057597A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B74B0C71A3644F600C79CED /* localhost.sqlite */,
 				14AE49201A1D9C910057597A /* Info.plist */,
 				14AE49211A1D9C910057597A /* main.m */,
 				614EAE861A2C05E900785381 /* CollectionCellInformation.plist */,
@@ -290,6 +297,7 @@
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
 				614EAE811A2C054200785381 /* PMortality.jpg in Resources */,
+				0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */,
 				614EAE841A2C054200785381 /* PSubmit.jpg in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 				614EAE7F1A2C054200785381 /* PInventory.jpg in Resources */,
