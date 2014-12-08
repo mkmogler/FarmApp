@@ -22,12 +22,6 @@
 		61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B051A23CCC200D3106E /* MedicationViewController.m */; };
 		61444B091A23CD7300D3106E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B081A23CD7300D3106E /* NotesViewController.m */; };
 		61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B111A23DDA800D3106E /* CreateGroupViewController.m */; };
-		614EAE7F1A2C054200785381 /* PInventory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE791A2C054200785381 /* PInventory.jpg */; };
-		614EAE801A2C054200785381 /* PMedications.png in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7A1A2C054200785381 /* PMedications.png */; };
-		614EAE811A2C054200785381 /* PMortality.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7B1A2C054200785381 /* PMortality.jpg */; };
-		614EAE821A2C054200785381 /* PNotes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7C1A2C054200785381 /* PNotes.jpg */; };
-		614EAE831A2C054200785381 /* PRoomStats.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7D1A2C054200785381 /* PRoomStats.jpg */; };
-		614EAE841A2C054200785381 /* PSubmit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE7E1A2C054200785381 /* PSubmit.jpg */; };
 		614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE861A2C05E900785381 /* CollectionCellInformation.plist */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
@@ -71,12 +65,6 @@
 		61444B081A23CD7300D3106E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
 		61444B101A23DDA800D3106E /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
 		61444B111A23DDA800D3106E /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
-		614EAE791A2C054200785381 /* PInventory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PInventory.jpg; path = ../../images/PInventory.jpg; sourceTree = "<group>"; };
-		614EAE7A1A2C054200785381 /* PMedications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PMedications.png; path = ../../images/PMedications.png; sourceTree = "<group>"; };
-		614EAE7B1A2C054200785381 /* PMortality.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PMortality.jpg; path = ../../images/PMortality.jpg; sourceTree = "<group>"; };
-		614EAE7C1A2C054200785381 /* PNotes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PNotes.jpg; path = ../../images/PNotes.jpg; sourceTree = "<group>"; };
-		614EAE7D1A2C054200785381 /* PRoomStats.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PRoomStats.jpg; path = ../../images/PRoomStats.jpg; sourceTree = "<group>"; };
-		614EAE7E1A2C054200785381 /* PSubmit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PSubmit.jpg; path = ../../images/PSubmit.jpg; sourceTree = "<group>"; };
 		614EAE861A2C05E900785381 /* CollectionCellInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CollectionCellInformation.plist; sourceTree = "<group>"; };
 		61B44C521A229DD500E31DED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -124,7 +112,6 @@
 		14AE491E1A1D9C910057597A /* Farm Application */ = {
 			isa = PBXGroup;
 			children = (
-				614EAE761A2C02C700785381 /* Images */,
 				61B44C511A229D8D00E31DED /* Views */,
 				14AE49291A1D9C910057597A /* Main.storyboard */,
 				14AE49231A1D9C910057597A /* AppDelegate.h */,
@@ -162,19 +149,6 @@
 				14AE493A1A1D9C910057597A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		614EAE761A2C02C700785381 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				614EAE7E1A2C054200785381 /* PSubmit.jpg */,
-				614EAE7A1A2C054200785381 /* PMedications.png */,
-				614EAE7B1A2C054200785381 /* PMortality.jpg */,
-				614EAE7D1A2C054200785381 /* PRoomStats.jpg */,
-				614EAE7C1A2C054200785381 /* PNotes.jpg */,
-				614EAE791A2C054200785381 /* PInventory.jpg */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		61B44C511A229D8D00E31DED /* Views */ = {
@@ -286,15 +260,9 @@
 				14AE492B1A1D9C910057597A /* Main.storyboard in Resources */,
 				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
-				614EAE831A2C054200785381 /* PRoomStats.jpg in Resources */,
 				14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
-				614EAE811A2C054200785381 /* PMortality.jpg in Resources */,
-				614EAE841A2C054200785381 /* PSubmit.jpg in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
-				614EAE7F1A2C054200785381 /* PInventory.jpg in Resources */,
-				614EAE821A2C054200785381 /* PNotes.jpg in Resources */,
-				614EAE801A2C054200785381 /* PMedications.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
