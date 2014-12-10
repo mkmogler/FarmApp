@@ -10,9 +10,15 @@
 
 @interface MortalityViewController ()
 
+@property (strong, nonatomic) NSArray *mortTypesArray;
+
 @end
 
 @implementation MortalityViewController
+@synthesize lblMortTotalPigs;
+@synthesize lblMortCurrentPig;
+@synthesize txtMortWeight;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +32,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //Create some variables
+    int intTotalPigs;
+    int intCurrentPig;
+    double dblWeight;
+    
+    //Create array of death types
+    self.mortTypesArray = [[NSArray alloc] initWithObjects:@"Previously Healthy", @"Pneumonia", @"Hemorrhagic Bowel", @"Lame", @"Strep", @"Tail Bite", @"Salmonella", @"Unthrifty/Thin", @"Twisted Gut", @"Ulcer", @"Other", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +58,50 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)btnMortBack:(id)sender
+{
+    //Will pull data from a temporary array stored in this view
+}
+
+- (IBAction)btnMortNext:(id)sender
+{
+    //Will pull data from a temporary array stored in this view
+}
+- (IBAction)btnMortNewPig:(id)sender
+{
+    //Gets the string of the selected picker variable
+    
+   // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
+    
+    
+
+    //For getting the string
+    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
+    
+    
+}
+
+
+//Set number of columns of picker
+#pragma mark Picker Data Source Methods
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+//Set number of rows of picker
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [_mortTypesArray count];
+}
+
+#pragma mark Picker Delegate Methods
+//Populate the picker with the array
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return [_mortTypesArray objectAtIndex:row];
+}
 
 @end
