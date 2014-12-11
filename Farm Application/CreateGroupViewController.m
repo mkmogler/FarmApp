@@ -15,6 +15,8 @@
 @end
 
 @implementation CreateGroupViewController
+@synthesize NumberOfPigsTextField;
+@synthesize NotesTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -69,5 +71,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

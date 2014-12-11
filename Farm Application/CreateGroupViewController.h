@@ -10,5 +10,6 @@
 
 @interface CreateGroupViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *barnPicker;
-
+@property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsTextField;
+@property (weak, nonatomic) IBOutlet UITextField *NotesTextField;
 @end

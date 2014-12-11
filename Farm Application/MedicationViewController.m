@@ -13,7 +13,9 @@
 @end
 
 @implementation MedicationViewController
-
+@synthesize DrugNameTextField;
+@synthesize NumberOfPigsTextField;
+@synthesize DosageTextField;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

@@ -10,5 +10,7 @@
 
 @interface InventoryViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIPickerView *SourcePicker;
+@property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsInTextField;
+@property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsOutTextField;
 
 @end

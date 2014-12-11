@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MedicationViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIPickerView *DrugIDPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *HospitalIDPicker;
+@property (weak, nonatomic) IBOutlet UITextField *DrugNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsTextField;
+@property (weak, nonatomic) IBOutlet UIPickerView *DosageTextField;
 
 @end

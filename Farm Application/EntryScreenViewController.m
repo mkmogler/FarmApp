@@ -38,9 +38,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//unwind method to get to this view
 - (IBAction)unwindToEntry:(UIStoryboardSegue *)unwindSegue{
     UIViewController *sourceController = unwindSegue.sourceViewController;
+    //actions based on which controller was dismissed
     if ([sourceController isKindOfClass:[RoomStatsViewController class]]){
         
     }

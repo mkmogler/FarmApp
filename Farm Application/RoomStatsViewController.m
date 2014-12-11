@@ -13,6 +13,12 @@
 @end
 
 @implementation RoomStatsViewController
+@synthesize TempHighTextField;
+@synthesize TempLowTextField;
+@synthesize GallonsConsumedTextField;
+@synthesize TempHigh2TextField;
+@synthesize TempLow2TextField;
+@synthesize GallonsConsumed2TextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

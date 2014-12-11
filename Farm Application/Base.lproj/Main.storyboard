@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-hg-RZ4">
-                                <rect key="frame" x="139" y="401" width="43" height="30"/>
+                                <rect key="frame" x="139" y="386" width="43" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,13 +143,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYF-xI-k3V">
-                                <rect key="frame" x="243" y="34" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8I-F6-q6I">
                                 <rect key="frame" x="143" y="437" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -163,6 +156,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="GallonsConsumed2TextField" destination="qC8-MJ-JnG" id="BPQ-bl-7ba"/>
+                        <outlet property="GallonsConsumedTextField" destination="ykX-Af-DMT" id="v4x-0A-bjZ"/>
+                        <outlet property="TempHigh2TextField" destination="wT7-xv-EeL" id="9km-L4-vQL"/>
+                        <outlet property="TempHighTextField" destination="F1l-wk-fBT" id="Axb-ur-qUx"/>
+                        <outlet property="TempLow2TextField" destination="2to-Ob-vxK" id="hJF-Ll-F2K"/>
+                        <outlet property="TempLowTextField" destination="Rwc-Cm-Qdn" id="1N2-3M-rHr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJo-ct-R0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="q4e-zO-9v2" userLabel="Exit" sceneMemberID="exit"/>
@@ -374,6 +375,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="DosageTextField" destination="T6t-MG-TOX" id="t2v-c7-GeC"/>
+                        <outlet property="DrugIDPicker" destination="2sj-a3-7ZA" id="dS8-sG-XbK"/>
+                        <outlet property="DrugNameTextField" destination="LPK-CS-mY4" id="2gH-ct-eQQ"/>
+                        <outlet property="HospitalIDPicker" destination="T6t-MG-TOX" id="M7I-H5-ZMc"/>
+                        <outlet property="NumberOfPigsTextField" destination="jar-aL-gOk" id="mlk-2e-JuR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgA-cT-Hlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OVB-OY-UGr" userLabel="Exit" sceneMemberID="exit"/>
@@ -440,6 +448,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="NumberOfPigsInTextField" destination="5dT-u3-xID" id="pD4-aG-1jb"/>
+                        <outlet property="NumberOfPigsOutTextField" destination="4KP-jE-MmX" id="aMl-O5-KDx"/>
                         <outlet property="SourcePicker" destination="Pd7-Iy-cl5" id="rcD-42-Egp"/>
                     </connections>
                 </viewController>
@@ -566,6 +576,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="NotesTextField" destination="nQM-ZG-ibF" id="rmJ-g1-48U"/>
+                        <outlet property="NumberOfPigsTextField" destination="s59-vQ-Peo" id="W9B-Cd-toC"/>
                         <outlet property="barnPicker" destination="YGE-NG-1cP" id="Vis-xS-gzK"/>
                     </connections>
                 </viewController>
@@ -651,6 +663,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="V7R-Dr-kKb"/>
+        <segue reference="bM2-Bf-MVc"/>
     </inferredMetricsTieBreakers>
 </document>
