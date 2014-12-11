@@ -10,5 +10,5 @@
 
 @interface LoginViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *namePicker;
-
+- (IBAction)unwindToLogin:(UIStoryboardSegue *)unwindSegue;
 @end

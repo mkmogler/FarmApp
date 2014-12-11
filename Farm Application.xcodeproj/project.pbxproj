@@ -17,6 +17,7 @@
 		14AE49301A1D9C910057597A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492E1A1D9C910057597A /* LaunchScreen.xib */; };
 		14AE493C1A1D9C910057597A /* Farm_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */; };
 		61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61115E781A311AB0001567DE /* Default-568h@2x.png */; };
+		61199B1A1A38F0C000D74927 /* EntryScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61199B191A38F0C000D74927 /* EntryScreenViewController.m */; };
 		61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */; };
 		61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444AFF1A23CC9900D3106E /* MortalityViewController.m */; };
 		61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B021A23CCB500D3106E /* InventoryViewController.m */; };
@@ -60,6 +61,8 @@
 		14AE493A1A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE493B1A1D9C910057597A /* Farm_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Farm_ApplicationTests.m; sourceTree = "<group>"; };
 		61115E781A311AB0001567DE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		61199B181A38F0C000D74927 /* EntryScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryScreenViewController.h; sourceTree = "<group>"; };
+		61199B191A38F0C000D74927 /* EntryScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryScreenViewController.m; sourceTree = "<group>"; };
 		61444AFB1A23CC8800D3106E /* RoomStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomStatsViewController.h; sourceTree = "<group>"; };
 		61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomStatsViewController.m; sourceTree = "<group>"; };
 		61444AFE1A23CC9900D3106E /* MortalityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MortalityViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
 				61444B101A23DDA800D3106E /* CreateGroupViewController.h */,
 				61444B111A23DDA800D3106E /* CreateGroupViewController.m */,
+				61199B181A38F0C000D74927 /* EntryScreenViewController.h */,
+				61199B191A38F0C000D74927 /* EntryScreenViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */,
 				61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */,
 				61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */,
+				61199B1A1A38F0C000D74927 /* EntryScreenViewController.m in Sources */,
 				61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
