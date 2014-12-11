@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface GroupSelectionViewController : UIViewController
-
+-(IBAction)unwindToGroupSelection:(UIStoryboardSegue *)unwindSegue;
 @end

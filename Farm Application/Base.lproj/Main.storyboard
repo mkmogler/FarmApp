@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="-337"/>
+            <point key="canvasLocation" x="-533" y="-1417"/>
         </scene>
         <!--Room Stats View Controller-->
         <scene sceneID="lO7-mG-vBe">
@@ -168,7 +168,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CJo-ct-R0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="q4e-zO-9v2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3" y="264"/>
+            <point key="canvasLocation" x="803" y="-864"/>
         </scene>
         <!--Mortality View Controller-->
         <scene sceneID="oTr-uu-dwL">
@@ -280,7 +280,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcO-SJ-WiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="psr-xL-CDJ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="76" y="874"/>
+            <point key="canvasLocation" x="803" y="834"/>
         </scene>
         <!--Medication View Controller-->
         <scene sceneID="pT8-yR-8Hw">
@@ -386,7 +386,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgA-cT-Hlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OVB-OY-UGr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="994" y="874"/>
+            <point key="canvasLocation" x="1192" y="270"/>
         </scene>
         <!--Inventory View Controller-->
         <scene sceneID="Ic5-6L-akT">
@@ -456,7 +456,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkz-HR-HzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="TqU-TB-FiA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="246"/>
+            <point key="canvasLocation" x="1192" y="-306"/>
         </scene>
         <!--Group Selection View Controller-->
         <scene sceneID="m6J-Ju-bKj">
@@ -514,7 +514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOs-a7-SDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781" y="-337"/>
+            <point key="canvasLocation" x="45" y="-1417"/>
         </scene>
         <!--Create Group View Controller-->
         <scene sceneID="Z4F-up-iTx">
@@ -569,7 +569,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uWv-U5-dvf" kind="modal" identifier="FromCreateGroup" id="bM2-Bf-MVc"/>
+                                    <segue destination="DSn-1k-JQs" kind="unwind" unwindAction="unwindToGroupSelection:" id="tXE-JW-sOr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -582,8 +582,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bug-V2-AD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DSn-1k-JQs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="-658"/>
+            <point key="canvasLocation" x="1192" y="-1417"/>
         </scene>
         <!--Entry Screen View Controller-->
         <scene sceneID="l6o-fj-t0Q">
@@ -654,7 +655,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWj-cn-zj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="4Zz-GB-G3m" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="537" y="254"/>
+            <point key="canvasLocation" x="365" y="-46"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -662,7 +663,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="bM2-Bf-MVc"/>
-    </inferredMetricsTieBreakers>
 </document>
