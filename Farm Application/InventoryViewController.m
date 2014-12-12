@@ -61,6 +61,10 @@
 {
     return _SourcePickerData[row];
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 /*
  #pragma mark - Navigation
  
@@ -72,4 +76,11 @@
  }
  */
 
+- (IBAction)NPIEnd:(id)sender {
+    [NumberOfPigsInTextField resignFirstResponder];
+}
+
+- (IBAction)NPOEnd:(id)sender {
+    [NumberOfPigsOutTextField resignFirstResponder];
+}
 @end

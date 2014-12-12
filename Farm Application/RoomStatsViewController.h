@@ -15,5 +15,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *TempHigh2TextField;
 @property (weak, nonatomic) IBOutlet UITextField *TempLow2TextField;
 @property (weak, nonatomic) IBOutlet UITextField *GallonsConsumed2TextField;
+- (IBAction)THEnd:(id)sender;
+- (IBAction)TLEnd:(id)sender;
+- (IBAction)GCend:(id)sender;
+- (IBAction)TH2End:(id)sender;
+- (IBAction)TL2End:(id)sender;
+- (IBAction)GC2End:(id)sender;
+
 
 @end

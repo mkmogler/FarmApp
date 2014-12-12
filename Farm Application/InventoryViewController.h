@@ -12,5 +12,8 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *SourcePicker;
 @property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsInTextField;
 @property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsOutTextField;
+- (IBAction)NPIEnd:(id)sender;
+- (IBAction)NPOEnd:(id)sender;
+
 
 @end

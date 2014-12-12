@@ -61,6 +61,10 @@
 {
     return _barnPickerData[row];
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 /*
 #pragma mark - Navigation
 
@@ -71,4 +75,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)NOPEnd:(id)sender {
+    [NumberOfPigsTextField resignFirstResponder];
+}
+- (IBAction)NotesEnd:(id)sender {
+    [NotesTextField resignFirstResponder];
+}
 @end

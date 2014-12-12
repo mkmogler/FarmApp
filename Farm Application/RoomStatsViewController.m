@@ -41,6 +41,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 /*
 #pragma mark - Navigation
 
@@ -52,4 +55,27 @@
 }
 */
 
+- (IBAction)THEnd:(id)sender {
+    [TempHighTextField resignFirstResponder];
+}
+
+- (IBAction)TLEnd:(id)sender {
+    [TempLowTextField resignFirstResponder];
+}
+
+- (IBAction)GCend:(id)sender {
+    [GallonsConsumedTextField resignFirstResponder];
+}
+
+- (IBAction)TH2End:(id)sender {
+    [TempHigh2TextField resignFirstResponder];
+}
+
+- (IBAction)TL2End:(id)sender {
+    [TempLow2TextField resignFirstResponder];
+}
+
+- (IBAction)GC2End:(id)sender {
+    [GallonsConsumed2TextField resignFirstResponder];
+}
 @end

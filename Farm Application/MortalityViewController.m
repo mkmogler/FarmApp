@@ -48,6 +48,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 /*
 #pragma mark - Navigation
 
@@ -80,6 +84,10 @@
     //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
     
     
+}
+
+- (IBAction)WeightEnd:(id)sender {
+    [txtMortWeight resignFirstResponder];
 }
 
 

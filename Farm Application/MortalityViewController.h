@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pckMortDeathType;
 
 - (IBAction)btnMortNewPig:(id)sender;
+- (IBAction)WeightEnd:(id)sender;
+
 
 @end
