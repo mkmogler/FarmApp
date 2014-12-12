@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     // Initialize Data
-    _namePickerData = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6"];
+    _namePickerData = @[@"Chet Mogler", @"Kent Mogler", @"Dwight Mogler", @"Any Hettinga", @"Andres C.", @"Marie F.", @"Alex De Jager", @"Gerald Den Hoed", @"Chad Riebeling", @"Glenda Riebeling", @"Dan Bakker", @"Larry Van Roekel", @"Steve Schemel", @"Jon Alons", @"Joy Alons", @"Dave Griesse", @"Chuck Van Roekel", @"Loren Van Roekel", @"Tim Feuchtenberger", @"Evan Altena", @"Randy Warner", @"Dan Berg", @"Gerald Berg", @"Janae Mogler", @"Lynelle Mogler", @"Drew Mogler"];
     
     // connect data
     self.namePicker.dataSource = self;
