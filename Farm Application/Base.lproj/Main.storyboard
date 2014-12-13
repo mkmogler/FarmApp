@@ -646,6 +646,9 @@
                                 <state key="normal" title="Button" image="RoomSTATSCropped.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VcF-W8-9Cy" kind="modal" id="uBc-0I-FCB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmD-QL-d0E">
                                 <rect key="frame" x="178" y="62" width="100" height="100"/>
@@ -653,6 +656,9 @@
                                 <state key="normal" title="Button" image="InventoryCrop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Rys-oa-TaK" kind="modal" id="9hu-DT-pp4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-Ni-DyP">
                                 <rect key="frame" x="43" y="225" width="100" height="100"/>
@@ -660,6 +666,9 @@
                                 <state key="normal" title="Button" image="MortalityCrop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="RGM-iL-msw" kind="modal" id="wbY-P9-GFY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fc-d6-4NT">
                                 <rect key="frame" x="175" y="225" width="100" height="100"/>
@@ -667,6 +676,9 @@
                                 <state key="normal" title="Button" image="MedicationsCrop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="usM-2r-nv5" kind="modal" id="DA1-l8-JEb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg6-ha-JAn">
                                 <rect key="frame" x="137" y="382" width="46" height="30"/>
