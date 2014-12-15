@@ -21,10 +21,11 @@
 		61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B021A23CCB500D3106E /* InventoryViewController.m */; };
 		61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B051A23CCC200D3106E /* MedicationViewController.m */; };
 		61444B091A23CD7300D3106E /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B081A23CD7300D3106E /* NotesViewController.m */; };
-		61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B111A23DDA800D3106E /* CreateGroupViewController.m */; };
+		61444B121A23DDA800D3106E /* BarnSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61444B111A23DDA800D3106E /* BarnSelectionViewController.m */; };
 		614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE861A2C05E900785381 /* CollectionCellInformation.plist */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
+		85E0F4E91A3E64CF00B7F08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0F4E71A3E64CF00B7F08C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		14AE49211A1D9C910057597A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14AE49231A1D9C910057597A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14AE49241A1D9C910057597A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		14AE492A1A1D9C910057597A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14AE492C1A1D9C910057597A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		14AE492F1A1D9C910057597A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		14AE493A1A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,13 +65,14 @@
 		61444B051A23CCC200D3106E /* MedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationViewController.m; sourceTree = "<group>"; };
 		61444B071A23CD7300D3106E /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		61444B081A23CD7300D3106E /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
-		61444B101A23DDA800D3106E /* CreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGroupViewController.h; sourceTree = "<group>"; };
-		61444B111A23DDA800D3106E /* CreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGroupViewController.m; sourceTree = "<group>"; };
+		61444B101A23DDA800D3106E /* BarnSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarnSelectionViewController.h; sourceTree = "<group>"; };
+		61444B111A23DDA800D3106E /* BarnSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarnSelectionViewController.m; sourceTree = "<group>"; };
 		614EAE861A2C05E900785381 /* CollectionCellInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CollectionCellInformation.plist; sourceTree = "<group>"; };
 		61B44C521A229DD500E31DED /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
 		61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSelectionViewController.m; sourceTree = "<group>"; };
+		85E0F4E81A3E64CF00B7F08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Farm Application/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +110,12 @@
 		14AE491E1A1D9C910057597A /* Farm Application */ = {
 			isa = PBXGroup;
 			children = (
+				85E0F4E61A3E637100B7F08C /* iPad */,
 				61B44C511A229D8D00E31DED /* Views */,
-				14AE49291A1D9C910057597A /* Main.storyboard */,
 				14AE49231A1D9C910057597A /* AppDelegate.h */,
 				14AE49241A1D9C910057597A /* AppDelegate.m */,
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
+				85E0F4E71A3E64CF00B7F08C /* Main.storyboard */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
 				0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */,
@@ -165,12 +167,19 @@
 				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
 				61B44C521A229DD500E31DED /* LoginViewController.h */,
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
-				61444B101A23DDA800D3106E /* CreateGroupViewController.h */,
-				61444B111A23DDA800D3106E /* CreateGroupViewController.m */,
+				61444B101A23DDA800D3106E /* BarnSelectionViewController.h */,
+				61444B111A23DDA800D3106E /* BarnSelectionViewController.m */,
 				61199B181A38F0C000D74927 /* EntryScreenViewController.h */,
 				61199B191A38F0C000D74927 /* EntryScreenViewController.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		85E0F4E61A3E637100B7F08C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +266,7 @@
 				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
+				85E0F4E91A3E64CF00B7F08C /* Main.storyboard in Resources */,
 				0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 			);
@@ -284,7 +294,7 @@
 				61B44C541A229DD500E31DED /* LoginViewController.m in Sources */,
 				61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */,
 				61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */,
-				61444B121A23DDA800D3106E /* CreateGroupViewController.m in Sources */,
+				61444B121A23DDA800D3106E /* BarnSelectionViewController.m in Sources */,
 				61199B1A1A38F0C000D74927 /* EntryScreenViewController.m in Sources */,
 				61444AFD1A23CC8800D3106E /* RoomStatsViewController.m in Sources */,
 			);
@@ -309,20 +319,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14AE49291A1D9C910057597A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14AE492A1A1D9C910057597A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14AE492E1A1D9C910057597A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				14AE492F1A1D9C910057597A /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		85E0F4E71A3E64CF00B7F08C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85E0F4E81A3E64CF00B7F08C /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,9 +422,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Farm Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,9 +437,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Farm Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

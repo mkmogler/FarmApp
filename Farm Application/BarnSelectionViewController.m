@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Kent Mogler. All rights reserved.
 //
 
-#import "CreateGroupViewController.h"
+#import "BarnSelectionViewController.h"
 
 @interface CreateGroupViewController ()
 {
