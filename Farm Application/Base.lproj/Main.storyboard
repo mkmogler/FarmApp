@@ -32,6 +32,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-hg-RZ4">
                                 <rect key="frame" x="139" y="442" width="43" height="30"/>
                                 <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -175,6 +176,7 @@
                                 <items>
                                     <navigationItem title="Room Stats" id="1Cx-0T-Lbe">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="gx5-h2-7wE">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="q4e-zO-9v2" kind="unwind" unwindAction="unwindExitToEntry:" id="2Ze-6d-83p"/>
                                             </connections>
@@ -260,6 +262,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPt-iZ-x95">
                                 <rect key="frame" x="105" y="408" width="111" height="30"/>
                                 <state key="normal" title="Add another pig">
+                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -298,6 +301,7 @@
                                 <items>
                                     <navigationItem title="Mortality" id="DhY-AH-jGS">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="N1y-lq-ExB">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="psr-xL-CDJ" kind="unwind" unwindAction="unwindExitToEntry:" id="cPB-UT-aoU"/>
                                             </connections>
@@ -393,6 +397,7 @@
                                 <items>
                                     <navigationItem title="Medication" id="PPa-Qw-unH">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="8Kq-6F-LHX">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="OVB-OY-UGr" kind="unwind" unwindAction="unwindExitToEntry:" id="Xtr-S4-KiM"/>
                                             </connections>
@@ -479,6 +484,7 @@
                                 <items>
                                     <navigationItem title="Inventory" id="syL-JL-9QO">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Eep-7j-1nl">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="TqU-TB-FiA" kind="unwind" unwindAction="unwindExitToEntry:" id="NmQ-PE-zxP"/>
                                             </connections>
@@ -554,6 +560,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-3B-E9u">
                                 <rect key="frame" x="114" y="466" width="93" height="30"/>
                                 <state key="normal" title="Create Group">
+                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -569,6 +576,7 @@
                                 <items>
                                     <navigationItem title="Group Creator" id="6wP-uA-6Y2">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="vwQ-iH-Hyz">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="241-4q-YzH" kind="unwind" unwindAction="unwindExitToBarnSelection:" id="pPZ-eE-iqT"/>
                                             </connections>
@@ -612,11 +620,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-NG-1cP">
-                                <rect key="frame" x="7" y="134" width="307" height="162"/>
+                                <rect key="frame" x="0.0" y="129" width="307" height="162"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sET-ZC-AEq">
                                 <rect key="frame" x="121" y="339" width="78" height="30"/>
                                 <state key="normal" title="New Group">
+                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -626,6 +635,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6f-vR-yZu">
                                 <rect key="frame" x="144" y="392" width="32" height="30"/>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -638,6 +648,7 @@
                                 <items>
                                     <navigationItem title="Barn" id="ygh-ns-aNp">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Ptk-GX-Gkz">
+                                            <color key="tintColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                             <connections>
                                                 <segue destination="2HL-Ow-FXH" kind="unwind" unwindAction="unwindExitToBarnSelection:" id="E8E-PT-YX4"/>
                                             </connections>
@@ -748,6 +759,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fT-no-NoM">
                                 <rect key="frame" x="239" y="499" width="53" height="30"/>
                                 <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.93725496530532837" green="0.36078432202339172" blue="0.20000001788139343" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -782,6 +794,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CDS-dF-OKl"/>
+        <segue reference="TYQ-8j-Hdh"/>
     </inferredMetricsTieBreakers>
 </document>
