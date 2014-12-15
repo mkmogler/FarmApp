@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroupSelectionViewController : UIViewController
+@interface GroupSelectionViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIPickerView *sourcePicker;
+
+
 -(IBAction)unwindToGroupSelection:(UIStoryboardSegue *)unwindSegue;
 @end

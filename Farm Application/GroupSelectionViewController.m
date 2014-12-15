@@ -9,7 +9,9 @@
 #import "GroupSelectionViewController.h"
 
 @interface GroupSelectionViewController ()
-
+{
+    NSArray *_sourcePickerData;
+}
 @end
 
 @implementation GroupSelectionViewController
@@ -26,13 +28,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Initialize Data
+    _sourcePickerData = @[@"Pig Hill(P)", @"Coyote Ridge(C)", @"Jackrabbit Farms(J)", @"Windy Plains(W)", @"Open Market(O)"];
+    // Connect Data
+    self.sourcePicker.dataSource = self;
+    self.sourcePicker.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// The number of colums of data
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _sourcePickerData.count;
+}
+
+//The data to return for the row and component (colum) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _sourcePickerData[row];
 }
 
 -(IBAction)unwindToGroupSelection:(UIStoryboardSegue *)unwindSegue{
