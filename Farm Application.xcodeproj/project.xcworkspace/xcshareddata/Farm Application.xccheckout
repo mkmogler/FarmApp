@@ -10,29 +10,29 @@
 	<string>Farm Application</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1EA5C67B-41BF-423C-96B7-A210334093F1</key>
+		<key>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</key>
 		<string>https://github.com/mkmogler/FarmApp</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Farm Application.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1EA5C67B-41BF-423C-96B7-A210334093F1</key>
+		<key>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mkmogler/FarmApp</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1EA5C67B-41BF-423C-96B7-A210334093F1</string>
+	<string>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1EA5C67B-41BF-423C-96B7-A210334093F1</string>
+			<string>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FarmApp</string>
 		</dict>
