@@ -611,7 +611,7 @@
                                     <navigationItem title="Barn" id="ygh-ns-aNp">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Ptk-GX-Gkz">
                                             <connections>
-                                                <segue destination="2HL-Ow-FXH" kind="unwind" unwindAction="unwindExitToLogin:" id="BRz-O6-Wr7"/>
+                                                <segue destination="2HL-Ow-FXH" kind="unwind" unwindAction="unwindExitToBarnSelection:" id="E8E-PT-YX4"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
