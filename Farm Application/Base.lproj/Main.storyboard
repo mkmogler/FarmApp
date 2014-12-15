@@ -546,7 +546,7 @@
                                     <navigationItem title="Group Creator" id="6wP-uA-6Y2">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="vwQ-iH-Hyz">
                                             <connections>
-                                                <segue destination="TBW-4I-n7E" kind="modal" id="XXf-zw-wAT"/>
+                                                <segue destination="241-4q-YzH" kind="unwind" unwindAction="unwindExitToBarnSelection:" id="pPZ-eE-iqT"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -562,6 +562,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOs-a7-SDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="241-4q-YzH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-43" y="-586"/>
         </scene>
@@ -610,7 +611,7 @@
                                     <navigationItem title="Barn" id="ygh-ns-aNp">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Ptk-GX-Gkz">
                                             <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="Hjj-U1-8eo"/>
+                                                <segue destination="2HL-Ow-FXH" kind="unwind" unwindAction="unwindExitToLogin:" id="BRz-O6-Wr7"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -624,6 +625,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bug-V2-AD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2HL-Ow-FXH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-419" y="-691"/>
         </scene>
@@ -744,7 +746,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CDS-dF-OKl"/>
-        <segue reference="XXf-zw-wAT"/>
+        <segue reference="TYQ-8j-Hdh"/>
     </inferredMetricsTieBreakers>
 </document>
