@@ -10,7 +10,9 @@
 
 @interface GroupSelectionViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIPickerView *sourcePicker;
-
-
+@property (weak, nonatomic) IBOutlet UITextField *NumberOfPigsTextFeild;
+@property (weak, nonatomic) IBOutlet UITextField *NotesTextFeild;
+- (IBAction)NOPDidEnd:(id)sender;
+- (IBAction)NDidEnd:(id)sender;
 -(IBAction)unwindToGroupSelection:(UIStoryboardSegue *)unwindSegue;
 @end

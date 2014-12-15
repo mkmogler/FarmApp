@@ -15,7 +15,8 @@
 @end
 
 @implementation GroupSelectionViewController
-
+@synthesize NumberOfPigsTextFeild;
+@synthesize NotesTextFeild;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -59,8 +60,16 @@
     return _sourcePickerData[row];
 }
 
--(IBAction)unwindToGroupSelection:(UIStoryboardSegue *)unwindSegue{
-    
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+- (IBAction)NOPDidEnd:(id)sender {
+    [NumberOfPigsTextFeild resignFirstResponder];
+}
+
+- (IBAction)NDidEnd:(id)sender {
+    [NotesTextFeild resignFirstResponder];
 }
 /*
 #pragma mark - Navigation

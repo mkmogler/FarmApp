@@ -540,7 +540,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="NOPEnd:" destination="TBW-4I-n7E" eventType="editingDidEnd" id="e08-Uz-1tC"/>
+                                    <action selector="NOPDidEnd:" destination="uWv-U5-dvf" eventType="editingDidEnd" id="Rhr-hj-ii7"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L2y-oJ-uop">
@@ -548,7 +548,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="NotesEnd:" destination="TBW-4I-n7E" eventType="editingDidEnd" id="hHD-hT-Gwa"/>
+                                    <action selector="NDidEnd:" destination="uWv-U5-dvf" eventType="editingDidEnd" id="hdv-R3-L0v"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-3B-E9u">
@@ -574,6 +574,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="NotesTextFeild" destination="L2y-oJ-uop" id="N73-jh-gd8"/>
+                        <outlet property="NumberOfPigsTextFeild" destination="d9l-DV-7Ce" id="HVC-Dp-piP"/>
                         <outlet property="sourcePicker" destination="KS9-d6-5Rz" id="WXk-1U-oYr"/>
                     </connections>
                 </viewController>
