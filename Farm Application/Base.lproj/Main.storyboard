@@ -168,7 +168,7 @@
                                     <navigationItem title="Room Stats" id="1Cx-0T-Lbe">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="gx5-h2-7wE">
                                             <connections>
-                                                <segue destination="cbY-PK-QDU" kind="modal" id="Onh-fV-uUw"/>
+                                                <segue destination="q4e-zO-9v2" kind="unwind" unwindAction="unwindExitToEntry:" id="2Ze-6d-83p"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -287,7 +287,7 @@
                                     <navigationItem title="Mortality" id="DhY-AH-jGS">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="N1y-lq-ExB">
                                             <connections>
-                                                <segue destination="cbY-PK-QDU" kind="modal" id="rDa-x2-xD3"/>
+                                                <segue destination="psr-xL-CDJ" kind="unwind" unwindAction="unwindExitToEntry:" id="cPB-UT-aoU"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -401,7 +401,7 @@
                                     <navigationItem title="Medication" id="PPa-Qw-unH">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="8Kq-6F-LHX">
                                             <connections>
-                                                <segue destination="cbY-PK-QDU" kind="modal" id="s8q-rN-aQ1"/>
+                                                <segue destination="OVB-OY-UGr" kind="unwind" unwindAction="unwindExitToEntry:" id="Xtr-S4-KiM"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -484,7 +484,7 @@
                                     <navigationItem title="Inventory" id="syL-JL-9QO">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Eep-7j-1nl">
                                             <connections>
-                                                <segue destination="cbY-PK-QDU" kind="modal" id="FJL-g3-DlV"/>
+                                                <segue destination="TqU-TB-FiA" kind="unwind" unwindAction="unwindExitToEntry:" id="NmQ-PE-zxP"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -727,7 +727,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="8N6-0L-sjb"/>
+                                    <segue destination="5mQ-t9-qsW" kind="unwind" unwindAction="unwindExitToLogin:" id="3ne-mo-MSr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -736,6 +736,7 @@
                     <navigationItem key="navigationItem" id="X12-Xj-7RE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWj-cn-zj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5mQ-t9-qsW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="327" y="-490"/>
         </scene>
@@ -753,6 +754,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="CDS-dF-OKl"/>
+        <segue reference="TYQ-8j-Hdh"/>
     </inferredMetricsTieBreakers>
 </document>

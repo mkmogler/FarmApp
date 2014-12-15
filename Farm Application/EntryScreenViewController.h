@@ -10,4 +10,5 @@
 
 @interface EntryScreenViewController : UIViewController
 -(IBAction)unwindToEntry:(UIStoryboardSegue *)unwindSegue;
+-(IBAction)unwindExitToEntry:(UIStoryboardSegue *)unwindSegue;
 @end
