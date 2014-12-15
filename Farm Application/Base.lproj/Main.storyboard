@@ -567,7 +567,13 @@
                                 <rect key="frame" x="5" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Group Creator" id="6wP-uA-6Y2"/>
+                                    <navigationItem title="Group Creator" id="6wP-uA-6Y2">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="vwQ-iH-Hyz">
+                                            <connections>
+                                                <segue destination="TBW-4I-n7E" kind="modal" id="XXf-zw-wAT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -625,7 +631,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Barn" id="ygh-ns-aNp"/>
+                                    <navigationItem title="Barn" id="ygh-ns-aNp">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ptk-GX-Gkz">
+                                            <connections>
+                                                <segue destination="vXZ-lx-hvc" kind="modal" id="Hjj-U1-8eo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -756,6 +768,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TYQ-8j-Hdh"/>
+        <segue reference="CDS-dF-OKl"/>
+        <segue reference="XXf-zw-wAT"/>
     </inferredMetricsTieBreakers>
 </document>
