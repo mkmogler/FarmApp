@@ -55,6 +55,23 @@
     //seth the database file path.
     NSString *databasePath = [self.documentsDirectory stringByAppendingPathComponent:self.databaseFilename];
     
+    //Initialize the result array.
+    if (self.arrResults != nil)
+    {
+        [self.arrResults removeAllObjects];
+        self.arrResults = nil;
+    }
+    self.arrResults = [[NSMutableArray alloc] init];
+    
+    //Initialize the column names array.
+    if (self.arrColumnNames != nil)
+    {
+        [self.arrColumnNames removeAllObjects];
+        self.arrColumnNames = nil;
+    }
+    self.arrColumnNames = [[NSMutableArray alloc] init];
+    
+    
     
     //THIS MIGHT NOT BE IN THE RIGHT PLACE
     BOOL openDatabaseResult = sqlite3_open([databasePath UTF8String], &sqlite3Database);
@@ -62,9 +79,6 @@
     //ERROR HERE------------------
     if(openDatabaseResult == SQLITE_OK)
     {
-    //sqlite3_stmt *compiledStatement;
-
-    }
         //Declare a sqlite3_stmt object in which will be stored the query after having been compiled into a SQLite statement.
         sqlite3_stmt *compiledStatement;
 
@@ -116,22 +130,42 @@
                 }
             }
         }
+        else
+            {
+                //This is the case of an executable query (inster, update, ...)
+                    
+                //Execute the query.
+                BOOL executeQueryResults = sqlite3_step(compiledStatement);
+                if (executeQueryResults == SQLITE_DONE)
+                {
+                    //Keep affected Rows.
+                    self.affectedRows = sqlite3_last_insert_rowid(sqlite3Database);
+                        
+                    //Keep the last insterted row ID.
+                    self.lastInsertedRowID = sqlite3_last_insert_rowid(sqlite3Database);
+                }
+                else
+                {
+                    //If could not execute the query, show the error message on debugger
+                    NSLog(@"DB ERROR: %s", sqlite3_errmsg(sqlite3Database));
+                }
+            }
+        }
+
+        else
+        {
+            // If the database cannot be opened then show the error message on debugger.
+            NSLog(@"DB ERROR: %s", sqlite3_errmsg(sqlite3Database));
+        }
+        
+        //release the compiled statements from memory
+        sqlite3_finalize(compiledStatement);
     }
-    //Initialize the result array.
-    if (self.arrResults != nil)
-    {
-        [self.arrResults removeAllObjects];
-        self.arrResults = nil;
-    }
-    self.arrResults = [[NSMutableArray alloc] init];
-     
-     //Initialize the column names array.
-     if (self.arrColumnNames != nil)
-     {
-         [self.arrColumnNames removeAllObjects];
-         self.arrColumnNames = nil;
-     }
-    self.arrColumnNames = [[NSMutableArray alloc] init];
+    
+    //Close the database
+    sqlite3_close(sqlite3Database);
 }
 
+
 @end
+
