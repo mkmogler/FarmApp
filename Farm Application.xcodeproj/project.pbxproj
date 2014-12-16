@@ -10,6 +10,7 @@
 		0B74B0C61A3644B100C79CED /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B74B0C51A3644B100C79CED /* libsqlite3.dylib */; };
 		0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B74B0C71A3644F600C79CED /* localhost.sqlite */; };
 		0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */; };
+		145CCC831A3FD131007138DF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CCC821A3FD131007138DF /* DBManager.m */; };
 		14AE49221A1D9C910057597A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49211A1D9C910057597A /* main.m */; };
 		14AE49251A1D9C910057597A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49241A1D9C910057597A /* AppDelegate.m */; };
 		14AE492D1A1D9C910057597A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE492C1A1D9C910057597A /* Images.xcassets */; };
@@ -44,6 +45,8 @@
 		0B74B0C51A3644B100C79CED /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0B74B0C71A3644F600C79CED /* localhost.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = localhost.sqlite; path = "Farm Application/localhost.sqlite"; sourceTree = "<group>"; };
 		0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Final Data Review Plist.plist"; sourceTree = "<group>"; };
+		145CCC811A3FD131007138DF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		145CCC821A3FD131007138DF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		14AE49201A1D9C910057597A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AE49211A1D9C910057597A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14AE49231A1D9C910057597A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 		61B44C511A229D8D00E31DED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				145CCC811A3FD131007138DF /* DBManager.h */,
+				145CCC821A3FD131007138DF /* DBManager.m */,
 				61444AFB1A23CC8800D3106E /* RoomStatsViewController.h */,
 				61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */,
 				61444AFE1A23CC9900D3106E /* MortalityViewController.h */,
@@ -289,6 +294,7 @@
 				61444B091A23CD7300D3106E /* NotesViewController.m in Sources */,
 				14AE49251A1D9C910057597A /* AppDelegate.m in Sources */,
 				61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */,
+				145CCC831A3FD131007138DF /* DBManager.m in Sources */,
 				14AE49221A1D9C910057597A /* main.m in Sources */,
 				61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */,
 				61B44C541A229DD500E31DED /* LoginViewController.m in Sources */,
