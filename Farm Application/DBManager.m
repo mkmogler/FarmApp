@@ -46,4 +46,30 @@
         }
     }
 }
+
+-(void)runQuery:(const char *)query isQueryExecutable:(BOOL)queryExecutable
+{
+    //create a sqlite objet.
+    sqlite3 *sqlite3Database;
+    
+    //seth the database file path.
+    NSString *databasePath = [self.documentsDirectory stringByAppendingPathComponent:self.databaseFilename];
+    
+    //Initialize the result array.
+    if (self.arrResults != nil)
+    {
+        [self.arrResults removeAllObjects];
+        self.arrResults = nil;
+    }
+    self.arrResults = [[NSMutableArray alloc] init];
+     
+     //Initialize the column names array.
+     if (self.arrColumnNames != nil)
+     {
+         [self.arrColumnNames removeAllObjects];
+         self.arrColumnNames = nil;
+     }
+     self.arrColumnNames = [[NSMutableArray alloc] init];
+}
+
 @end

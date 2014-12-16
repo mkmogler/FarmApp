@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) NSMutableArray *arrColumnNames;
 @property (nonatomic) int affectedRows;
+//possibly change long long
 @property (nonatomic) long long lastInsertedRowID;
 
 
