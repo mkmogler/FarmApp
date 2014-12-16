@@ -28,7 +28,8 @@
 @synthesize lblMortTotalPigs;
 @synthesize lblMortCurrentPig;
 @synthesize txtMortWeight;
-
+@synthesize btnMortNewPigProp;
+@synthesize btnUpdatePigProp;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -93,11 +94,15 @@
         txtMortWeight.text = prevWeight;
         
         currentID--;
-    }
-    else if(currentID == count)
-    {
+        if(currentID == count)
+        {
+            btnMortNewPigProp.enabled = false;
+            btnUpdatePigProp.enabled = true;
+        }
+        
         
     }
+    
 }
 
 - (IBAction)btnMortNext:(id)sender
@@ -121,12 +126,39 @@
         lblMortCurrentPig.text = nextID;
         txtMortWeight.text = @"";
         currentID++;
+        btnMortNewPigProp.enabled = true;
+        btnUpdatePigProp.enabled = false;
     }
     
 }
 - (IBAction)btnUpdatePig:(id)sender
 {
+    NSInteger getPigID = currentID - 1;
     
+    //Get death type from picker
+    NSString *strSelectedDeathType;
+    NSInteger row = [_pckMortDeathType selectedRowInComponent:0];
+    strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
+    
+    //Make number formatter to make strings decimal
+    NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+    [nf setNumberStyle:NSNumberFormatterDecimalStyle];
+    
+    
+    //pass values into pig
+    mortPig *pig = [[mortPig alloc] init];
+    NSNumber *temp = [NSNumber numberWithInt:count];
+    pig.pigID = temp;
+    pig.weight = [nf numberFromString:txtMortWeight.text];
+    pig.deathType = strSelectedDeathType;
+    //[mortPigs addObject:pig];
+    
+    [mortPigs removeObjectAtIndex:getPigID];
+    [mortPigs insertObject:pig atIndex:getPigID];
+
+    UIAlertView *Success = [[UIAlertView alloc]initWithTitle:@"Success!" message: @"Pig Updated" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [Success show];
+
 }
 
 - (IBAction)btnMortNewPig:(id)sender
@@ -175,7 +207,7 @@
     }
     else
     {
-        UIAlertView *error = [[UIAlertView alloc]initWithTitle:@"ERROR" message: @"A weight has not been entered" delegate:nil cancelButtonTitle:@"I admit my inferiority" otherButtonTitles: nil];
+        UIAlertView *error = [[UIAlertView alloc]initWithTitle:@"ERROR" message: @"A weight has not been entered" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [error show];
     }
         
