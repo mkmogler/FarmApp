@@ -9,6 +9,9 @@
 #import "MedicationViewController.h"
 
 @interface MedicationViewController ()
+{
+    NSArray *_DrugIDPickerData;
+}
 
 @end
 
@@ -28,7 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Initialize Data
+    _DrugIDPickerData = @[@"(IJ)Penicillin", @"(IJ)Exede", @"(IJ)Baytril", @"(IJ)Draxxin", @"(IJ)Tylan 200", @"(IJ)Exenel", @"(IJ)Linco", @"(IJ)Dexamethasone", @"(IJ)Banamine", @"(WM)Amoxicillin", @"(WM)Asprin", @"(WM)Denegard", @"(WM)Linco", @"(WM)Sulfa-Trim", @"(WM)Tetra-Oxy", @"(WM)Tylan", @"(WM)Blue Lite Plus", @"(WM)Neomix", @"(WM)Gentamed"];
+    
+    // Connect data
+    self.DrugIDPicker.dataSource = self;
+    self.DrugIDPicker.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +45,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+// The number of columns of data
+- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// The number of rows of data
+- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return _DrugIDPickerData.count;
+}
+
+// The data to return for the row and component (column) that's being passed in
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return _DrugIDPickerData[row];
+}
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
