@@ -169,8 +169,7 @@
 		61B44C511A229D8D00E31DED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				145CCC811A3FD131007138DF /* DBManager.h */,
-				145CCC821A3FD131007138DF /* DBManager.m */,
+				8536E47A1A40DA82000BEF23 /* DBManager */,
 				61444AFB1A23CC8800D3106E /* RoomStatsViewController.h */,
 				61444AFC1A23CC8800D3106E /* RoomStatsViewController.m */,
 				61444AFE1A23CC9900D3106E /* MortalityViewController.h */,
@@ -191,6 +190,15 @@
 				61199B191A38F0C000D74927 /* EntryScreenViewController.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		8536E47A1A40DA82000BEF23 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				145CCC811A3FD131007138DF /* DBManager.h */,
+				145CCC821A3FD131007138DF /* DBManager.m */,
+			);
+			name = DBManager;
 			sourceTree = "<group>";
 		};
 		85E0F4E61A3E637100B7F08C /* iPad */ = {

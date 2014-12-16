@@ -166,6 +166,20 @@
     sqlite3_close(sqlite3Database);
 }
 
+-(NSArray *)loadDataFromDB:(NSString *)query
+{
+    //Run the query and indicate that it is not executable
+    // the query string is converted to a char* object
+    [self runQuery:[query UTF8String] isQueryExecutable:NO];
+    
+    //Returned the loaded Results.
+    return (NSArray *)self.arrResults;
+}
+-(void)executeQuery:(NSString *)query
+{
+    //Run the query and indicate it is executable
+    [self runQuery:[query UTF8String] isQueryExecutable:YES];
+}
 
 @end
 
