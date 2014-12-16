@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B74B0C61A3644B100C79CED /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B74B0C51A3644B100C79CED /* libsqlite3.dylib */; };
-		0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0B74B0C71A3644F600C79CED /* localhost.sqlite */; };
+		0B74B0C81A3644F600C79CED /* localhost.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0B74B0C71A3644F600C79CED /* localhost.sql */; };
 		0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */; };
 		0BD1E57F1A40977D00598B5B /* mortPig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1E57E1A40977D00598B5B /* mortPig.m */; };
 		145CCC831A3FD131007138DF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CCC821A3FD131007138DF /* DBManager.m */; };
@@ -44,7 +44,7 @@
 		0B6D17961A3E5D55003B1FB1 /* Farm Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6D17971A3E5D55003B1FB1 /* Farm ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Farm ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B74B0C51A3644B100C79CED /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		0B74B0C71A3644F600C79CED /* localhost.sqlite */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = localhost.sqlite; path = "Farm Application/localhost.sqlite"; sourceTree = "<group>"; };
+		0B74B0C71A3644F600C79CED /* localhost.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = localhost.sql; path = "Farm Application/localhost.sql"; sourceTree = "<group>"; };
 		0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Final Data Review Plist.plist"; sourceTree = "<group>"; };
 		0BD1E57D1A40977D00598B5B /* mortPig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mortPig.h; sourceTree = "<group>"; };
 		0BD1E57E1A40977D00598B5B /* mortPig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mortPig.m; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0B74B0C51A3644B100C79CED /* libsqlite3.dylib */,
-				0B74B0C71A3644F600C79CED /* localhost.sqlite */,
+				0B74B0C71A3644F600C79CED /* localhost.sql */,
 				61115E781A311AB0001567DE /* Default-568h@2x.png */,
 				14AE491E1A1D9C910057597A /* Farm Application */,
 				14AE49381A1D9C910057597A /* Farm ApplicationTests */,
@@ -293,7 +293,7 @@
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
 				85E0F4E91A3E64CF00B7F08C /* Main.storyboard in Resources */,
-				0B74B0C81A3644F600C79CED /* localhost.sqlite in Resources */,
+				0B74B0C81A3644F600C79CED /* localhost.sql in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
