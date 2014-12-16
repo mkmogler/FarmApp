@@ -27,7 +27,7 @@
 		614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 614EAE861A2C05E900785381 /* CollectionCellInformation.plist */; };
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
-		85E0F4E91A3E64CF00B7F08C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E0F4E71A3E64CF00B7F08C /* Main.storyboard */; };
+		8536E47D1A40E45A000BEF23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8536E47B1A40E45A000BEF23 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		61B44C531A229DD500E31DED /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
 		61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSelectionViewController.m; sourceTree = "<group>"; };
-		85E0F4E81A3E64CF00B7F08C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Farm Application/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		8536E47C1A40E45A000BEF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				14AE49241A1D9C910057597A /* AppDelegate.m */,
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
 				14AE49211A1D9C910057597A /* main.m */,
-				85E0F4E71A3E64CF00B7F08C /* Main.storyboard */,
+				8536E47B1A40E45A000BEF23 /* Main.storyboard */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
 				0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */,
@@ -292,7 +292,7 @@
 				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
-				85E0F4E91A3E64CF00B7F08C /* Main.storyboard in Resources */,
+				8536E47D1A40E45A000BEF23 /* Main.storyboard in Resources */,
 				0B74B0C81A3644F600C79CED /* localhost.sql in Resources */,
 				14AE492D1A1D9C910057597A /* Images.xcassets in Resources */,
 			);
@@ -355,13 +355,12 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		85E0F4E71A3E64CF00B7F08C /* Main.storyboard */ = {
+		8536E47B1A40E45A000BEF23 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85E0F4E81A3E64CF00B7F08C /* Base */,
+				8536E47C1A40E45A000BEF23 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
