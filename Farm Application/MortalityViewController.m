@@ -11,6 +11,11 @@
 @interface MortalityViewController ()
 
 @property (strong, nonatomic) NSArray *mortTypesArray;
+/*@property (strong, nonatomic) NSArray *mortNumPigs;
+ 
+ @property (strong, nonatomic) NSArray *mortWeights;
+ 
+ @property (strong, nonatomic) NSArray *mortDeathType; */
 
 @end
 
@@ -37,6 +42,7 @@
     int intTotalPigs;
     int intCurrentPig;
     double dblWeight;
+    int intMortPigCount;
     
     //Create array of death types
     self.mortTypesArray = [[NSArray alloc] initWithObjects:@"Previously Healthy", @"Pneumonia", @"Hemorrhagic Bowel", @"Lame", @"Strep", @"Tail Bite", @"Salmonella", @"Unthrifty/Thin", @"Twisted Gut", @"Ulcer", @"Other", nil];
@@ -76,12 +82,34 @@
 {
     //Gets the string of the selected picker variable
     
-   // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
+    
+    // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
+    
+    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
+    
+    NSString *strSelectedDeathType;
+    NSInteger row = [_pckMortDeathType selectedRowInComponent:0];
+    strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
+    
+    //Make arrays
+    NSMutableArray *mortWeights = [[NSMutableArray alloc] init];
+    NSMutableArray *mortDeathType = [[NSMutableArray alloc] init];
+    [mortWeights addObject: @"null"];
+    [mortDeathType addObject: @"null"];
+    
+    [mortWeights addObject: txtMortWeight.text];
+    [mortDeathType addObject: strSelectedDeathType];
+    
+    NSInteger pigcount = [mortWeights indexOfObject: [mortWeights objectAtIndex:row]];
+    
+    //Makes and populates the alert
+    NSString *alertMessage = [NSString stringWithFormat:@"Pig number: " "%d" @"\nWeight: " "%@" @"\nDeath Type: " "%@", pigcount, [mortWeights objectAtIndex:0], [mortDeathType objectAtIndex:0]];
+    UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:alertMessage delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    
+    [newPigAlert show];
     
     
 
-    //For getting the string
-    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
     
     
 }
