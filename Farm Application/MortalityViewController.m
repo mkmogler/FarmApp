@@ -11,6 +11,11 @@
 @interface MortalityViewController ()
 
 @property (strong, nonatomic) NSArray *mortTypesArray;
+/*@property (strong, nonatomic) NSArray *mortNumPigs;
+ 
+ @property (strong, nonatomic) NSArray *mortWeights;
+ 
+ @property (strong, nonatomic) NSArray *mortDeathType; */
 
 @end
 
@@ -37,6 +42,7 @@
     int intTotalPigs;
     int intCurrentPig;
     double dblWeight;
+    int intMortPigCount;
     
     //Create array of death types
     self.mortTypesArray = [[NSArray alloc] initWithObjects:@"Previously Healthy", @"Pneumonia", @"Hemorrhagic Bowel", @"Lame", @"Strep", @"Tail Bite", @"Salmonella", @"Unthrifty/Thin", @"Twisted Gut", @"Ulcer", @"Other", nil];
@@ -76,12 +82,32 @@
 {
     //Gets the string of the selected picker variable
     
-   // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
     
+    // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
+    
+    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
+    
+    NSString *strSelectedDeathType;
+    NSInteger row;
+    row = [_pckMortDeathType selectedRowInComponent:0];
+    strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
+    
+    
+    NSMutableArray *mortWeights = [[NSMutableArray alloc] init];
+    NSMutableArray *mortDeathType = [[NSMutableArray alloc] init];
+
+    
+    [mortWeights addObject: txtMortWeight.text];
+    [mortDeathType addObject: strSelectedDeathType];
+    
+    //Makes and populates the alert
+    NSString *alertMessage = [NSString stringWithFormat:@]
+    UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:[mortDeathType objectAtIndex:0] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    
+    [newPigAlert show];
+    //For getting the string
     
 
-    //For getting the string
-    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
     
     
 }
