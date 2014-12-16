@@ -88,24 +88,26 @@
     //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
     
     NSString *strSelectedDeathType;
-    NSInteger row;
-    row = [_pckMortDeathType selectedRowInComponent:0];
+    NSInteger row = [_pckMortDeathType selectedRowInComponent:0];
     strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
     
-    
+    //Make arrays
     NSMutableArray *mortWeights = [[NSMutableArray alloc] init];
     NSMutableArray *mortDeathType = [[NSMutableArray alloc] init];
-
+    [mortWeights addObject: @"null"];
+    [mortDeathType addObject: @"null"];
     
     [mortWeights addObject: txtMortWeight.text];
     [mortDeathType addObject: strSelectedDeathType];
     
-    //Makes and populates the alert
-    /*NSString *alertMessage = [NSString stringWithFormat:@]
-    UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:[mortDeathType objectAtIndex:0] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    NSInteger pigcount = [mortWeights indexOfObject: [mortWeights objectAtIndex:row]];
     
-    [newPigAlert show]; */
-    //For getting the string
+    //Makes and populates the alert
+    NSString *alertMessage = [NSString stringWithFormat:@"Pig number: " "%d" @"\nWeight: " "%@" @"\nDeath Type: " "%@", pigcount, [mortWeights objectAtIndex:0], [mortDeathType objectAtIndex:0]];
+    UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:alertMessage delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    
+    [newPigAlert show];
+    
     
 
     
