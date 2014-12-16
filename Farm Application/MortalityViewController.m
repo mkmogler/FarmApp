@@ -101,10 +101,10 @@
     [mortDeathType addObject: strSelectedDeathType];
     
     //Makes and populates the alert
-    NSString *alertMessage = [NSString stringWithFormat:@]
+    /*NSString *alertMessage = [NSString stringWithFormat:@]
     UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:[mortDeathType objectAtIndex:0] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     
-    [newPigAlert show];
+    [newPigAlert show]; */
     //For getting the string
     
 
