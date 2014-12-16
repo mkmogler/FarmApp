@@ -368,7 +368,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jar-aL-gOk">
-                                <rect key="frame" x="164" y="224" width="97" height="30"/>
+                                <rect key="frame" x="164" y="224" width="114" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -376,16 +376,21 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RpS-GY-G1A">
-                                <rect key="frame" x="164" y="269" width="97" height="30"/>
+                                <rect key="frame" x="164" y="269" width="114" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="DTFEnd:" destination="RGM-iL-msw" eventType="editingDidEnd" id="rzz-Lz-HB4"/>
                                 </connections>
                             </textField>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T6t-MG-TOX">
-                                <rect key="frame" x="155" y="307" width="98" height="162"/>
-                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Df-ny-sro">
+                                <rect key="frame" x="164" y="373" width="114" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="DTFEnd:" destination="RGM-iL-msw" eventType="editingDidEnd" id="ron-AG-AXO"/>
+                                </connections>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7n-mP-edF">
                                 <rect key="frame" x="250" y="498" width="50" height="50"/>
                                 <state key="normal" title="Save" image="FinalSave">
@@ -412,9 +417,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="DosageTextField" destination="T6t-MG-TOX" id="t2v-c7-GeC"/>
                         <outlet property="DrugIDPicker" destination="2sj-a3-7ZA" id="dS8-sG-XbK"/>
-                        <outlet property="HospitalIDPicker" destination="T6t-MG-TOX" id="M7I-H5-ZMc"/>
                         <outlet property="NumberOfPigsTextField" destination="jar-aL-gOk" id="mlk-2e-JuR"/>
                     </connections>
                 </viewController>
