@@ -131,6 +131,7 @@
 				14AE49231A1D9C910057597A /* AppDelegate.h */,
 				14AE49241A1D9C910057597A /* AppDelegate.m */,
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
+				14AE49211A1D9C910057597A /* main.m */,
 				85E0F4E71A3E64CF00B7F08C /* Main.storyboard */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
@@ -143,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				14AE49201A1D9C910057597A /* Info.plist */,
-				14AE49211A1D9C910057597A /* main.m */,
 				614EAE861A2C05E900785381 /* CollectionCellInformation.plist */,
 			);
 			name = "Supporting Files";
