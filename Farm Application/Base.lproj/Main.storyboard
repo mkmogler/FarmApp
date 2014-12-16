@@ -545,7 +545,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pig Source:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOR-kK-2NV">
-                                <rect key="frame" x="121" y="90" width="89" height="21"/>
+                                <rect key="frame" x="121" y="76" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -586,7 +586,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS9-d6-5Rz">
-                                <rect key="frame" x="0.0" y="110" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="105" width="320" height="162"/>
                             </pickerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJW-fs-ZKs">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -832,6 +832,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TYQ-8j-Hdh"/>
+        <segue reference="CDS-dF-OKl"/>
     </inferredMetricsTieBreakers>
 </document>
