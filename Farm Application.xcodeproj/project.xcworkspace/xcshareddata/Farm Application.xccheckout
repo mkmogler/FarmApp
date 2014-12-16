@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2DCB75A9-53EA-4951-A30B-1663949F89B1</string>
+	<string>A748932C-39D9-4984-B1DE-05A128F803B8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Farm Application</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</key>
-		<string>https://github.com/mkmogler/FarmApp</string>
+		<string>https://github.com/mkmogler/FarmApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Farm Application.xcodeproj/project.xcworkspace</string>
+	<string>Farm Application.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mkmogler/FarmApp</string>
+	<string>https://github.com/mkmogler/FarmApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>FC4B7D95A7ED4CD55C4CE5CCE451BC92CCB5D17B</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FarmApp</string>
+			<string>Farm%20Application</string>
 		</dict>
 	</array>
 </dict>
