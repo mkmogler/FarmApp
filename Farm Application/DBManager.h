@@ -11,10 +11,15 @@
 
 @interface DBManager : NSObject
 
+-(NSArray *)loadDataFromDB:(NSString *)query;
+
+-(void)executeQuery:(NSString *)query;
+
 -(instancetype)initWithDatabaseFilename:(NSString *)localhost;
 
 @property (nonatomic, strong) NSMutableArray *arrColumnNames;
 @property (nonatomic) int affectedRows;
+//possibly change long long
 @property (nonatomic) long long lastInsertedRowID;
 
 -(NSArray *)loadDataFromDB:(NSString *)query;

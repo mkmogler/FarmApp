@@ -7,7 +7,7 @@
 //
 
 #import "MortalityViewController.h"
-
+#import "mortPig.h"
 @interface MortalityViewController ()
 
 @property (strong, nonatomic) NSArray *mortTypesArray;
@@ -20,10 +20,16 @@
 @end
 
 @implementation MortalityViewController
+{
+    NSMutableArray *mortPigs;
+    NSInteger currentID;
+    NSInteger count;
+}
 @synthesize lblMortTotalPigs;
 @synthesize lblMortCurrentPig;
 @synthesize txtMortWeight;
-
+@synthesize btnMortNewPigProp;
+@synthesize btnUpdatePigProp;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,12 +43,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    mortPigs= [[NSMutableArray alloc] init];
+
     
     //Create some variables
     int intTotalPigs;
     int intCurrentPig;
     double dblWeight;
     int intMortPigCount;
+    currentID = 1;
+    count = 0;
+    
     
     //Create array of death types
     self.mortTypesArray = [[NSArray alloc] initWithObjects:@"Previously Healthy", @"Pneumonia", @"Hemorrhagic Bowel", @"Lame", @"Strep", @"Tail Bite", @"Salmonella", @"Unthrifty/Thin", @"Twisted Gut", @"Ulcer", @"Other", nil];
@@ -71,47 +82,135 @@
 
 - (IBAction)btnMortBack:(id)sender
 {
-    //Will pull data from a temporary array stored in this view
+    if(currentID > 1)
+    {
+        mortPig *pig = [mortPigs objectAtIndex:currentID -2];
+        NSString *prevID = [NSString stringWithFormat:@"%d", currentID-1];
+        NSString *prevWeight = [NSString stringWithFormat:@"%@", pig.weight];
+        
+        
+        lblMortCurrentPig.text = prevID;
+        
+        txtMortWeight.text = prevWeight;
+        
+        currentID--;
+        if(currentID == count)
+        {
+            btnMortNewPigProp.enabled = false;
+            btnUpdatePigProp.enabled = true;
+        }
+        
+        
+    }
+    
 }
 
 - (IBAction)btnMortNext:(id)sender
 {
-    //Will pull data from a temporary array stored in this view
+    if(currentID < count)
+    {
+        mortPig *pig = [mortPigs objectAtIndex:currentID];
+        NSString *nextID = [NSString stringWithFormat:@"%d", currentID+1];
+        NSString *nextWeight = [NSString stringWithFormat:@"%@", pig.weight];
+        
+        
+        lblMortCurrentPig.text = nextID;
+        
+        txtMortWeight.text = nextWeight;
+        currentID++;
+        
+    }
+    else if(currentID == count)
+    {
+        NSString *nextID = [NSString stringWithFormat:@"%d", currentID+1];
+        lblMortCurrentPig.text = nextID;
+        txtMortWeight.text = @"";
+        currentID++;
+        btnMortNewPigProp.enabled = true;
+        btnUpdatePigProp.enabled = false;
+    }
+    
 }
-- (IBAction)btnMortNewPig:(id)sender
+- (IBAction)btnUpdatePig:(id)sender
 {
-    //Gets the string of the selected picker variable
+    NSInteger getPigID = currentID - 1;
     
-    
-    // NSInteger row= [[self.pckMortDeathType selectedRowInComponent:0];
-    
-    //NSString *select = [_pckMortDeathType objectAtIndex:[_pckMortDeathType selectedRowInComponent:0]];
-    
+    //Get death type from picker
     NSString *strSelectedDeathType;
     NSInteger row = [_pckMortDeathType selectedRowInComponent:0];
     strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
     
-    //Make arrays
-    NSMutableArray *mortWeights = [[NSMutableArray alloc] init];
-    NSMutableArray *mortDeathType = [[NSMutableArray alloc] init];
-    [mortWeights addObject: @"null"];
-    [mortDeathType addObject: @"null"];
-    
-    [mortWeights addObject: txtMortWeight.text];
-    [mortDeathType addObject: strSelectedDeathType];
-    
-    NSInteger pigcount = [mortWeights indexOfObject: [mortWeights objectAtIndex:row]];
-    
-    //Makes and populates the alert
-    NSString *alertMessage = [NSString stringWithFormat:@"Pig number: " "%d" @"\nWeight: " "%@" @"\nDeath Type: " "%@", pigcount, [mortWeights objectAtIndex:0], [mortDeathType objectAtIndex:0]];
-    UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:alertMessage delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
-    
-    [newPigAlert show];
+    //Make number formatter to make strings decimal
+    NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+    [nf setNumberStyle:NSNumberFormatterDecimalStyle];
     
     
+    //pass values into pig
+    mortPig *pig = [[mortPig alloc] init];
+    NSNumber *temp = [NSNumber numberWithInt:count];
+    pig.pigID = temp;
+    pig.weight = [nf numberFromString:txtMortWeight.text];
+    pig.deathType = strSelectedDeathType;
+    //[mortPigs addObject:pig];
+    
+    [mortPigs removeObjectAtIndex:getPigID];
+    [mortPigs insertObject:pig atIndex:getPigID];
 
-    
-    
+    UIAlertView *Success = [[UIAlertView alloc]initWithTitle:@"Success!" message: @"Pig Updated" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [Success show];
+
+}
+
+- (IBAction)btnMortNewPig:(id)sender
+{
+
+    if (txtMortWeight.text && txtMortWeight.text.length > 0)
+    {
+        count++;
+        currentID++;
+        
+        //Get death type from picker
+        NSString *strSelectedDeathType;
+        NSInteger row = [_pckMortDeathType selectedRowInComponent:0];
+        strSelectedDeathType = [_mortTypesArray objectAtIndex:row];
+        
+        //Make number formatter to make strings decimal
+        NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
+        [nf setNumberStyle:NSNumberFormatterDecimalStyle];
+        
+        
+        //pass values into pig
+        mortPig *pig = [[mortPig alloc] init];
+        NSNumber *temp = [NSNumber numberWithInt:count];
+        pig.pigID = temp;
+        pig.weight = [nf numberFromString:txtMortWeight.text];
+        pig.deathType = strSelectedDeathType;
+        [mortPigs addObject:pig];
+        
+        
+        
+        
+        //Makes and populates the alert
+        
+        NSString *alertMessage = [NSString stringWithFormat:@"Pig " "%@" @"\nWeight: " "%@" @"\nDeath Type: " "%@", pig.pigID, pig.weight, pig.deathType];
+        UIAlertView *newPigAlert = [[UIAlertView alloc]initWithTitle:@"New pig added!" message:alertMessage delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [newPigAlert show];
+        
+        NSString *labelCount = [NSString stringWithFormat:@"%d", count];
+        NSString *labelCount1 = [NSString stringWithFormat:@"%d", count +1];
+        
+        lblMortCurrentPig.text = labelCount1;
+        lblMortTotalPigs.text = labelCount;
+        
+        txtMortWeight.text = @"";
+
+    }
+    else
+    {
+        UIAlertView *error = [[UIAlertView alloc]initWithTitle:@"ERROR" message: @"A weight has not been entered" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [error show];
+    }
+        
 }
 
 - (IBAction)WeightEnd:(id)sender {

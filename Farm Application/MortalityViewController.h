@@ -15,6 +15,10 @@
 - (IBAction)btnMortNext:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *txtMortWeight;
 @property (weak, nonatomic) IBOutlet UIPickerView *pckMortDeathType;
+- (IBAction)btnUpdatePig:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnUpdatePigProp;
+@property (weak, nonatomic) IBOutlet UIButton *btnMortNewPigProp;
+
 
 - (IBAction)btnMortNewPig:(id)sender;
 - (IBAction)WeightEnd:(id)sender;
