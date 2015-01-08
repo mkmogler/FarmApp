@@ -17,6 +17,10 @@
 @property (nonatomic) int affectedRows;
 @property (nonatomic) long long lastInsertedRowID;
 
+-(NSArray *)loadDataFromDB:(NSString *)query;
+
+-(void)executeQuery:(NSString *)query;
+
 
 @end
 
@@ -25,7 +29,7 @@
 @property (nonatomic, strong) NSString *databaseFilename;
 @property (nonatomic, strong) NSMutableArray *arrResults;
 
--(void)runQuery:(const char *)query isQueryExecutable:(BOOL)queryExecutable;
+-(void)runQuery:(const char *)query   isQueryExecutable:(BOOL)queryExecutable;
 -(void)copyDatabaseIntoDocumentsDirectory;
 
 @end
