@@ -119,18 +119,49 @@
                             dbDataAsChars = (char *)sqlite3_column_name(compiledStatement, i);
                             [self.arrColumnNames addObject:[NSString stringWithUTF8String:dbDataAsChars]];
                         }
-                        
+                    }
+                    
                         //Store each fetched data row in the results array, but first check if there is actually data,
-                        if (arrDataRow.count > 0) {
+                        if (arrDataRow.count > 0)
+                        {
                             [self.arrResults addObject:arrDataRow];
                         }
-                    }
                 }
             }
+                        else
+                        {
+                            //This is the case of an executable query (insert, update, ...)
+                            
+                            //Execute the query
+                            BOOL executeQueryResults = sqlite3_step(compiledStatement);
+                            if(executeQueryResults == SQLITE_DONE)
+                            {
+                                //Keep affected rows.
+                                self.affectedRows = sqlite3_changes(sqlite3Database);
+                                
+                                //Keep the last inserted row ID.
+                                self.lastInsertedRowID = sqlite3_last_insert_rowid(sqlite3Database);
+                            }
+                            else
+                            {
+                                //If could not executre the query show the error message on debugger.
+                                NSLog(@"%s", sqlite3_errmsg(sqlite3Database));
+                            }
+                            
+                        }
+                    }
+                    else
+                    {
+                        //If the database cannot be opened then show the error message on the debugger.
+                        NSLog(@"%s", sqlite3_errmsg(sqlite3Database));
+                    }
+                //Release the compiled statement from memory.
+                sqlite3_finalize(compiledStatement);
+            }
+    
+            //Close the database.
+            sqlite3_close(sqlite3Database);
         }
-    //load all data from database to memory
-    }
-}
 
 @end
 
