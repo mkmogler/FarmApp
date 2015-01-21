@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIPickerView *namePicker;
-- (IBAction)unwindToLogin:(UIStoryboardSegue *)unwindSegue;
-- (IBAction)unwindExitToLogin:(UIStoryboardSegue *)unwindSegue;
+@property (weak, nonatomic) IBOutlet UIControl *miniView;
+@property (weak, nonatomic) IBOutlet UITextField *passwordText;
+
+- (IBAction)passwordDidBegin:(id)sender;
+- (IBAction)passwordDidEnd:(id)sender;
+- (IBAction)viewTapped:(id)sender;
+- (IBAction)logIn:(id)sender;
+
+
 @end

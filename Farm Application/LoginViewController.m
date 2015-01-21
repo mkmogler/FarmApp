@@ -36,6 +36,31 @@
     self.namePicker.delegate = self;
 }
 
+- (IBAction)passwordDidBegin:(id)sender
+{
+    // move view so user can read text while typing
+    // use bottom bar as a reference for distance
+    [self.miniView setCenter:CGPointMake(160, self.view.bounds.size.height - 350)];
+}
+
+- (IBAction)passwordDidEnd:(id)sender
+{
+    // move view back to 160, 228
+    [self.miniView setCenter:CGPointMake(160, 228)];
+}
+
+- (IBAction)viewTapped:(id)sender
+{
+    // remove first responder
+    [self.passwordText resignFirstResponder];
+}
+
+- (IBAction)logIn:(id)sender
+{
+    [self performSegueWithIdentifier:@"logIn" sender:self];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -60,11 +85,6 @@
     return _namePickerData[row];
 }
 
-- (IBAction)unwindToLogin:(UIStoryboardSegue *)unwindSegue{
-}
-
-- (IBAction)unwindExitToLogin:(UIStoryboardSegue *)unwindSegue{
-}
 /*
 #pragma mark - Navigation
 
@@ -75,5 +95,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // check login credentials
+    [self.passwordText resignFirstResponder];
+}
+
 
 @end
