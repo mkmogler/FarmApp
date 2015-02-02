@@ -28,6 +28,10 @@
 		61B44C541A229DD500E31DED /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C531A229DD500E31DED /* LoginViewController.m */; };
 		61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */; };
 		8536E47D1A40E45A000BEF23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8536E47B1A40E45A000BEF23 /* Main.storyboard */; };
+		C3865D241A7844B000A1E801 /* RoomSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3865D231A7844B000A1E801 /* RoomSelectionViewController.m */; };
+		C3EA34CF1A7FD2F00062AE30 /* RoomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EA34CD1A7FD2F00062AE30 /* RoomCell.m */; };
+		C3EA34D01A7FD2F00062AE30 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EA34CE1A7FD2F00062AE30 /* RoomCell.xib */; };
+		C3EA34D31A7FD6B00062AE30 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EA34D21A7FD6B00062AE30 /* Singleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,13 @@
 		61B44C551A229EFF00E31DED /* GroupSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSelectionViewController.h; sourceTree = "<group>"; };
 		61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSelectionViewController.m; sourceTree = "<group>"; };
 		8536E47C1A40E45A000BEF23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3865D221A7844B000A1E801 /* RoomSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoomSelectionViewController.h; path = ../RoomSelectionViewController.h; sourceTree = "<group>"; };
+		C3865D231A7844B000A1E801 /* RoomSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoomSelectionViewController.m; path = ../RoomSelectionViewController.m; sourceTree = "<group>"; };
+		C3EA34CC1A7FD2F00062AE30 /* RoomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomCell.h; sourceTree = "<group>"; };
+		C3EA34CD1A7FD2F00062AE30 /* RoomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomCell.m; sourceTree = "<group>"; };
+		C3EA34CE1A7FD2F00062AE30 /* RoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomCell.xib; sourceTree = "<group>"; };
+		C3EA34D11A7FD6B00062AE30 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		C3EA34D21A7FD6B00062AE30 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +144,8 @@
 				14AE492C1A1D9C910057597A /* Images.xcassets */,
 				14AE49211A1D9C910057597A /* main.m */,
 				8536E47B1A40E45A000BEF23 /* Main.storyboard */,
+				C3EA34D11A7FD6B00062AE30 /* Singleton.h */,
+				C3EA34D21A7FD6B00062AE30 /* Singleton.m */,
 				14AE492E1A1D9C910057597A /* LaunchScreen.xib */,
 				14AE491F1A1D9C910057597A /* Supporting Files */,
 				0B92862F1A32527B00932EA5 /* Final Data Review Plist.plist */,
@@ -184,10 +197,15 @@
 				61B44C561A229EFF00E31DED /* GroupSelectionViewController.m */,
 				61B44C521A229DD500E31DED /* LoginViewController.h */,
 				61B44C531A229DD500E31DED /* LoginViewController.m */,
+				C3865D221A7844B000A1E801 /* RoomSelectionViewController.h */,
+				C3865D231A7844B000A1E801 /* RoomSelectionViewController.m */,
 				61444B101A23DDA800D3106E /* BarnSelectionViewController.h */,
 				61444B111A23DDA800D3106E /* BarnSelectionViewController.m */,
 				61199B181A38F0C000D74927 /* EntryScreenViewController.h */,
 				61199B191A38F0C000D74927 /* EntryScreenViewController.m */,
+				C3EA34CC1A7FD2F00062AE30 /* RoomCell.h */,
+				C3EA34CD1A7FD2F00062AE30 /* RoomCell.m */,
+				C3EA34CE1A7FD2F00062AE30 /* RoomCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -289,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3EA34D01A7FD2F00062AE30 /* RoomCell.xib in Resources */,
 				61115E791A311AB0001567DE /* Default-568h@2x.png in Resources */,
 				614EAE871A2C05E900785381 /* CollectionCellInformation.plist in Resources */,
 				0B9286301A32527B00932EA5 /* Final Data Review Plist.plist in Resources */,
@@ -314,11 +333,14 @@
 			files = (
 				61444B091A23CD7300D3106E /* NotesViewController.m in Sources */,
 				0BD1E57F1A40977D00598B5B /* mortPig.m in Sources */,
+				C3865D241A7844B000A1E801 /* RoomSelectionViewController.m in Sources */,
 				14AE49251A1D9C910057597A /* AppDelegate.m in Sources */,
+				C3EA34CF1A7FD2F00062AE30 /* RoomCell.m in Sources */,
 				61444B031A23CCB500D3106E /* InventoryViewController.m in Sources */,
 				145CCC831A3FD131007138DF /* DBManager.m in Sources */,
 				14AE49221A1D9C910057597A /* main.m in Sources */,
 				61444B061A23CCC200D3106E /* MedicationViewController.m in Sources */,
+				C3EA34D31A7FD6B00062AE30 /* Singleton.m in Sources */,
 				61B44C541A229DD500E31DED /* LoginViewController.m in Sources */,
 				61444B001A23CC9900D3106E /* MortalityViewController.m in Sources */,
 				61B44C571A229EFF00E31DED /* GroupSelectionViewController.m in Sources */,

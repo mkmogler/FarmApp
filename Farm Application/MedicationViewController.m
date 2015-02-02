@@ -16,9 +16,7 @@
 @end
 
 @implementation MedicationViewController
-@synthesize DrugNameTextField;
 @synthesize NumberOfPigsTextField;
-@synthesize DosageTextField;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -77,15 +75,9 @@
 }
 */
 
-- (IBAction)DNEnd:(id)sender {
-    [DrugNameTextField resignFirstResponder];
-}
-
 - (IBAction)NOPEnd:(id)sender {
     [NumberOfPigsTextField resignFirstResponder];
 }
 
-- (IBAction)DTFEnd:(id)sender {
-    [DosageTextField resignFirstResponder];
-}
+
 @end

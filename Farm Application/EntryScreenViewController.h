@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface EntryScreenViewController : UIViewController
--(IBAction)unwindToEntry:(UIStoryboardSegue *)unwindSegue;
--(IBAction)unwindExitToEntry:(UIStoryboardSegue *)unwindSegue;
+
+@property (weak, nonatomic) IBOutlet UILabel *room;
+
+- (IBAction)submit:(id)sender;
+
 @end

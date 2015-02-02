@@ -1,22 +1,18 @@
 //
-//  RoomStatsViewController.m
+//  Select Room.m
 //  Farm Application
 //
-//  Created by Nelson, Trevor J on 2014-11-24.
-//  Copyright (c) 2014 Kent Mogler. All rights reserved.
+//  Created by Thelen, Scott J on 2015-01-27.
+//  Copyright (c) 2015 Kent Mogler. All rights reserved.
 //
 
-#import "RoomStatsViewController.h"
+#import "Select Room.h"
 
-@interface RoomStatsViewController ()
+@interface Select_Room ()
 
 @end
 
-@implementation RoomStatsViewController
-@synthesize TempHighTextField;
-@synthesize TempLowTextField;
-@synthesize GallonsConsumedTextField;
-
+@implementation Select_Room
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,9 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
-}
 /*
 #pragma mark - Navigation
 
@@ -52,17 +45,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)THEnd:(id)sender {
-    [TempHighTextField resignFirstResponder];
-}
-
-- (IBAction)TLEnd:(id)sender {
-    [TempLowTextField resignFirstResponder];
-}
-
-- (IBAction)GCend:(id)sender {
-    [GallonsConsumedTextField resignFirstResponder];
-}
 
 @end

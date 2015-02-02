@@ -64,12 +64,47 @@
     [self.view endEditing:YES];
 }
 
-- (IBAction)NOPDidEnd:(id)sender {
-    [NumberOfPigsTextFeild resignFirstResponder];
+- (IBAction)NOPDidBegin:(id)sender
+{
+    [self.miniView setCenter:CGPointMake(160, self.view.bounds.size.height - 360)];
+    
 }
 
-- (IBAction)NDidEnd:(id)sender {
+- (IBAction)NDidBegin:(id)sender
+{
+    [self.miniView setCenter:CGPointMake(160, self.view.bounds.size.height - 360)];
+}
+
+- (IBAction)NOPDidEnd:(id)sender
+{
+    [NumberOfPigsTextFeild resignFirstResponder];
+    printf("DidEnd ");
+}
+
+- (IBAction)NDidEnd:(id)sender
+{
     [NotesTextFeild resignFirstResponder];
+}
+
+- (IBAction)NOPDidEndOnExit:(id)sender
+{
+    [self.NotesTextFeild becomeFirstResponder];
+}
+
+- (IBAction)NDidEndOnExit:(id)sender
+{
+    
+}
+
+- (IBAction)viewTapped:(id)sender
+{
+    // return mini view to original place
+    [self.miniView setCenter:CGPointMake(160, 212)];
+    [self.NotesTextFeild resignFirstResponder];
+    [self.NumberOfPigsTextFeild resignFirstResponder];
+}
+
+- (IBAction)createGroup:(id)sender {
 }
 /*
 #pragma mark - Navigation
