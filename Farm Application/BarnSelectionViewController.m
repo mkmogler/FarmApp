@@ -7,6 +7,7 @@
 //
 
 #import "BarnSelectionViewController.h"
+#import "Singleton.h"
 
 @interface CreateGroupViewController ()
 {
@@ -60,8 +61,10 @@
     return _barnPickerData[row];
 }
 
--(IBAction)unwindExitToBarnSelection:(UIStoryboardSegue *)unwindSegue{
-    
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    Singleton *single = [Singleton singletonData];
+    single.barn = [NSString stringWithFormat:@"%@", [_barnPickerData objectAtIndex:[self.barnPicker selectedRowInComponent:0]]];
 }
 /*
 #pragma mark - Navigation

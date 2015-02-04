@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "Singleton.h"
 
 @interface LoginViewController ()
 {
@@ -59,6 +60,12 @@
 - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     return _namePickerData[row];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    Singleton *single = [Singleton singletonData];
+    single.name = [NSString stringWithFormat:@"%@", [_namePickerData objectAtIndex:[self.namePicker selectedRowInComponent:0]]];
 }
 
 /*

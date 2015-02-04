@@ -168,7 +168,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izi-HQ-R5j">
-                                <rect key="frame" x="165" y="165" width="97" height="30"/>
+                                <rect key="frame" x="160" y="126" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -176,12 +176,12 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight (lbs)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viK-17-Ae2">
-                                <rect key="frame" x="54" y="169" width="89" height="21"/>
+                                <rect key="frame" x="63" y="130" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfE-XK-NJ0">
-                                <rect key="frame" x="208" y="120" width="60" height="30"/>
+                                <rect key="frame" x="243" y="74" width="60" height="30"/>
                                 <state key="normal" title=">" image="Forward">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -190,18 +190,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pig" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-YI-1QZ">
-                                <rect key="frame" x="139" y="124" width="25" height="21"/>
+                                <rect key="frame" x="185" y="78" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTI-tf-izt">
-                                <rect key="frame" x="172" y="124" width="17" height="21"/>
+                                <rect key="frame" x="218" y="78" width="33" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUQ-on-6f6">
-                                <rect key="frame" x="47" y="120" width="60" height="30"/>
+                                <rect key="frame" x="117" y="74" width="60" height="30"/>
                                 <state key="normal" title="&lt;" image="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -209,42 +209,42 @@
                                     <action selector="btnMortBack:" destination="usM-2r-nv5" eventType="touchUpInside" id="oGL-TI-4Cu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPt-iZ-x95">
-                                <rect key="frame" x="105" y="449" width="111" height="30"/>
-                                <state key="normal" title="Add another pig">
-                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnMortNewPig:" destination="usM-2r-nv5" eventType="touchUpInside" id="DuF-9A-4AJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Pigs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A92-Lx-8oc">
-                                <rect key="frame" x="64" y="77" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBv-sF-Iwi">
-                                <rect key="frame" x="206" y="77" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sw3-ty-U1E">
-                                <rect key="frame" x="0.0" y="221" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="231" width="320" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="usM-2r-nv5" id="H8C-7b-Kr9"/>
                                     <outlet property="delegate" destination="usM-2r-nv5" id="Qqt-kS-l08"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bna-nQ-FDB">
-                                <rect key="frame" x="122" y="487" width="77" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Pigs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-KU-Hun">
+                                <rect key="frame" x="20" y="74" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Update Pig">
-                                    <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="totalPigsDidEnd:" destination="usM-2r-nv5" eventType="editingDidEnd" id="6Z2-jU-r4P"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cause Of Death" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKR-eS-0su">
+                                <rect key="frame" x="30" y="164" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Cause Selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-zz-O1L">
+                                <rect key="frame" x="160" y="164" width="140" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lp-Ww-8rH">
+                                <rect key="frame" x="115" y="193" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Cause">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnUpdatePig:" destination="usM-2r-nv5" eventType="touchUpInside" id="iON-Ux-Bj7"/>
+                                    <action selector="causeSelected:" destination="usM-2r-nv5" eventType="touchUpInside" id="HHy-PP-jv0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,11 +252,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Mortality" id="WpP-au-Sns"/>
                     <connections>
-                        <outlet property="btnMortNewPigProp" destination="aPt-iZ-x95" id="Rv0-95-2Uv"/>
-                        <outlet property="btnUpdatePigProp" destination="bna-nQ-FDB" id="6xU-QT-ctZ"/>
+                        <outlet property="backButton" destination="NUQ-on-6f6" id="bvU-Zs-uUT"/>
+                        <outlet property="causeOfDeath" destination="fIF-zz-O1L" id="OKd-py-j6e"/>
                         <outlet property="lblMortCurrentPig" destination="kTI-tf-izt" id="xKz-Qf-tVf"/>
-                        <outlet property="lblMortTotalPigs" destination="YBv-sF-Iwi" id="UvE-VJ-dgP"/>
+                        <outlet property="nextButton" destination="gfE-XK-NJ0" id="Fex-Wf-gVu"/>
                         <outlet property="pckMortDeathType" destination="sw3-ty-U1E" id="blq-l0-uil"/>
+                        <outlet property="totalPigs" destination="r9w-KU-Hun" id="Mdj-Ib-Egk"/>
                         <outlet property="txtMortWeight" destination="izi-HQ-R5j" id="0nG-FQ-nwn"/>
                     </connections>
                 </viewController>
@@ -444,6 +445,7 @@
                                         </state>
                                         <connections>
                                             <action selector="createGroup:" destination="uWv-U5-dvf" eventType="touchUpInside" id="89c-ae-Rxt"/>
+                                            <segue destination="cbY-PK-QDU" kind="push" id="xQs-6e-J3E"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-ve-A0B">
@@ -534,7 +536,7 @@
             </objects>
             <point key="canvasLocation" x="-849" y="-623"/>
         </scene>
-        <!--Room Selection View Controller - Select Room-->
+        <!--Room Selection View Controller - Barn-->
         <scene sceneID="UZc-2K-ha5">
             <objects>
                 <viewController id="pBu-Ef-MZF" customClass="RoomSelectionViewController" sceneMemberID="viewController">
@@ -596,7 +598,7 @@
                             <constraint firstItem="Vtv-9b-XAB" firstAttribute="leading" secondItem="17V-Uh-M42" secondAttribute="leading" constant="20" id="k7l-7B-4V5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Room" id="Vu4-H3-Df9">
+                    <navigationItem key="navigationItem" title="Barn" id="Vu4-H3-Df9">
                         <barButtonItem key="backBarButtonItem" title="Select Room" id="2zw-vM-GPs"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="FVD-13-fUA">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vH0-3M-FkR">
@@ -742,4 +744,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="sxA-tV-MM1"/>
+    </inferredMetricsTieBreakers>
 </document>

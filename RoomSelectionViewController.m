@@ -8,6 +8,7 @@
 
 #import "RoomSelectionViewController.h"
 #import "RoomCell.h"
+#import "Singleton.h"
 
 @interface RoomSelectionViewController ()
 
@@ -27,7 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Singleton *single = [Singleton singletonData];
     // Do any additional setup after loading the view.
+    [self setTitle:single.barn];
     [self.updateRoomButton setHidden:true];
 }
 

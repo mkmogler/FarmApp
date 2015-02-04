@@ -58,9 +58,6 @@
         NSLog(@"unwinding from unknown view controller");
     }
 }
-
-- (IBAction)unwindExitToEntry:(UIStoryboardSegue *)unwindSegue{
-}
 /*
 #pragma mark - Navigation
 

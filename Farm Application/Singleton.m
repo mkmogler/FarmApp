@@ -8,9 +8,9 @@
 
 #import "Singleton.h"
 
-@implementation singleton
+@implementation Singleton
 
-static singleton *shared = NULL;
+static Singleton *shared = NULL;
 
 +(id)singletonData
 {
@@ -19,7 +19,7 @@ static singleton *shared = NULL;
         if ( !shared || shared == NULL )
         {
             // allocate the shared instance, because it hasn't been done yet
-            shared = [[singleton alloc] init];
+            shared = [[Singleton alloc] init];
         }
         
         return shared;

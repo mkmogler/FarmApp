@@ -9,19 +9,25 @@
 #import <UIKit/UIKit.h>
 
 @interface MortalityViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
-@property (weak, nonatomic) IBOutlet UILabel *lblMortTotalPigs;
+
+@property (weak, nonatomic) IBOutlet UITextField *totalPigs;
+- (IBAction)totalPigsDidEnd:(id)sender;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *lblMortCurrentPig;
+
 - (IBAction)btnMortBack:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+
 - (IBAction)btnMortNext:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+
 @property (weak, nonatomic) IBOutlet UITextField *txtMortWeight;
 @property (weak, nonatomic) IBOutlet UIPickerView *pckMortDeathType;
-- (IBAction)btnUpdatePig:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *btnUpdatePigProp;
-@property (weak, nonatomic) IBOutlet UIButton *btnMortNewPigProp;
 
-
-- (IBAction)btnMortNewPig:(id)sender;
 - (IBAction)WeightEnd:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *causeOfDeath;
 
+- (IBAction)causeSelected:(id)sender;
 @end

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface singleton : NSObject
+@interface Singleton : NSObject
 {
     NSString *name;
     
