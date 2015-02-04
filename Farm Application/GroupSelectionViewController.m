@@ -7,6 +7,7 @@
 //
 
 #import "GroupSelectionViewController.h"
+#import "Singleton.h"
 
 @interface GroupSelectionViewController ()
 {
@@ -30,6 +31,8 @@
 {
     [super viewDidLoad];
     // Initialize Data
+    Singleton *single = [Singleton singletonData];
+    [self.room setText:single.room];
     _sourcePickerData = @[@"Pig Hill(P)", @"Coyote Ridge(C)", @"Jackrabbit Farms(J)", @"Windy Plains(W)", @"Open Market(O)"];
     // Connect Data
     self.sourcePicker.dataSource = self;
@@ -78,7 +81,6 @@
 - (IBAction)NOPDidEnd:(id)sender
 {
     [NumberOfPigsTextFeild resignFirstResponder];
-    printf("DidEnd ");
 }
 
 - (IBAction)NDidEnd:(id)sender
@@ -104,8 +106,16 @@
     [self.NumberOfPigsTextFeild resignFirstResponder];
 }
 
-- (IBAction)createGroup:(id)sender {
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    Singleton *single = [Singleton singletonData];
+    single.nPigs = true;
+    single.nNumPigs = self.NumberOfPigsTextFeild.text.integerValue;
+    single.nPigNotes = self.NotesTextFeild.text;
+    single.nPigSource = [_sourcePickerData objectAtIndex:[self.sourcePicker selectedRowInComponent:0]];
+    
 }
+
 /*
 #pragma mark - Navigation
 

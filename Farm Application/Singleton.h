@@ -17,9 +17,11 @@
     NSString *room;
     NSString *status;
     
+    //n stands for new
     NSString *nPigSource;
     NSInteger *nNumPigs;
     NSString *nPigNotes;
+    Boolean *nPigs;
     
     float *tempHigh;
     float *tempLow;
@@ -47,6 +49,7 @@
 @property (nonatomic, assign) NSString *nPigSource;
 @property (nonatomic, assign) NSInteger *nNumPigs;
 @property (nonatomic, assign) NSString *nPigNotes;
+@property (nonatomic, assign) Boolean *nPigs;
 
 @property (nonatomic, assign) float *tempHigh;
 @property (nonatomic, assign) float *tempLow;

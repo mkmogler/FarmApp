@@ -437,31 +437,32 @@
                                             <action selector="NDidEndOnExit:" destination="uWv-U5-dvf" eventType="editingDidEndOnExit" id="74f-g9-cfZ"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-3B-E9u">
-                                        <rect key="frame" x="114" y="228" width="93" height="30"/>
-                                        <state key="normal" title="Create Group">
-                                            <color key="titleColor" red="0.93725496529999996" green="0.36078432199999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="createGroup:" destination="uWv-U5-dvf" eventType="touchUpInside" id="89c-ae-Rxt"/>
-                                            <segue destination="cbY-PK-QDU" kind="push" id="xQs-6e-J3E"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-ve-A0B">
-                                        <rect key="frame" x="20" y="-1" width="34" height="21"/>
+                                        <rect key="frame" x="20" y="-1" width="88" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-rZ-42C">
+                                        <rect key="frame" x="114" y="228" width="93" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Create Group">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cbY-PK-QDU" kind="push" id="bHT-lx-9rN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="d9l-DV-7Ce" firstAttribute="top" secondItem="KS9-d6-5Rz" secondAttribute="bottom" constant="8" id="AMY-F2-4YW"/>
                                     <constraint firstItem="L2y-oJ-uop" firstAttribute="leading" secondItem="d9l-DV-7Ce" secondAttribute="trailing" constant="8" id="Ai0-x7-yQI"/>
-                                    <constraint firstItem="C1E-3B-E9u" firstAttribute="top" secondItem="L2y-oJ-uop" secondAttribute="bottom" constant="8" id="CuB-44-gs0"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Md-rZ-42C" secondAttribute="bottom" constant="20" id="BbJ-qT-7P4"/>
                                     <constraint firstItem="L2y-oJ-uop" firstAttribute="top" secondItem="KS9-d6-5Rz" secondAttribute="bottom" constant="8" id="d9U-P4-15W"/>
                                     <constraint firstItem="ZOR-kK-2NV" firstAttribute="top" secondItem="dCX-vb-oqb" secondAttribute="top" id="ly4-ae-sdc"/>
+                                    <constraint firstAttribute="bottom" secondItem="d9l-DV-7Ce" secondAttribute="bottom" constant="58" id="pJO-qa-8As"/>
+                                    <constraint firstItem="9Md-rZ-42C" firstAttribute="top" secondItem="L2y-oJ-uop" secondAttribute="bottom" constant="8" id="qge-TF-0JL"/>
                                     <constraint firstItem="KS9-d6-5Rz" firstAttribute="top" secondItem="dCX-vb-oqb" secondAttribute="top" constant="20" id="ygC-xF-HKt"/>
                                 </constraints>
                                 <connections>
@@ -707,8 +708,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iII-uB-Ovk">
-                                <rect key="frame" x="143" y="62" width="34" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iII-uB-Ovk">
+                                <rect key="frame" x="114" y="62" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -745,6 +746,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sxA-tV-MM1"/>
+        <segue reference="bHT-lx-9rN"/>
     </inferredMetricsTieBreakers>
 </document>

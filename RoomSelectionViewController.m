@@ -30,6 +30,7 @@
     [super viewDidLoad];
     Singleton *single = [Singleton singletonData];
     // Do any additional setup after loading the view.
+    single.nPigs = false;
     [self setTitle:single.barn];
     [self.updateRoomButton setHidden:true];
 }
@@ -101,6 +102,12 @@
         [self.updateRoomButton setTitle:@"Update Room" forState:UIControlStateNormal];
         [self.updateRoomButton setHidden:false];
     }
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    Singleton *single = [Singleton singletonData];
+    single.room = self.roomSelectedLabel.text;
 }
 
 @end

@@ -7,10 +7,7 @@
 //
 
 #import "EntryScreenViewController.h"
-#import "RoomStatsViewController.h"
-#import "MortalityViewController.h"
-#import "InventoryViewController.h"
-#import "MedicationViewController.h"
+#import "Singleton.h"
 
 @interface EntryScreenViewController ()
 
@@ -30,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Singleton *single = [Singleton singletonData];
+    [self.room setText:single.room];
     // Do any additional setup after loading the view.
 }
 
@@ -38,26 +37,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//unwind method to get to this view
-- (IBAction)unwindToEntry:(UIStoryboardSegue *)unwindSegue{
-    UIViewController *sourceController = unwindSegue.sourceViewController;
-    //actions based on which controller was dismissed
-    if ([sourceController isKindOfClass:[RoomStatsViewController class]]){
-        
-    }
-    else if ([sourceController isKindOfClass:[MortalityViewController class]]){
-        
-    }
-    else if ([sourceController isKindOfClass:[InventoryViewController class]]){
-        
-    }
-    else if ([sourceController isKindOfClass:[MedicationViewController class]]){
-        
-    }
-    else{
-        NSLog(@"unwinding from unknown view controller");
-    }
-}
+
 /*
 #pragma mark - Navigation
 

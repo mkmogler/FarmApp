@@ -28,7 +28,5 @@
 
 - (IBAction)viewTapped:(id)sender;
 
-- (IBAction)createGroup:(id)sender;
-
 
 @end

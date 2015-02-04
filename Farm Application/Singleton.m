@@ -37,7 +37,7 @@ static Singleton *shared = NULL;
 {
     if (self = [super init])
     {
-        
+        nPigs = false;
     }
     return self;
 }
